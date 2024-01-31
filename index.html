@@ -8,12 +8,13 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
-        <link rel="stylesheet" href="css/filter.css">
-<link rel="stylesheet" href="css/nouislider.min.css">
+        <link rel="stylesheet" href="css/leaflet-measure.css">
         <style>
-        #map {
-            width: 890px;
-            height: 802px;
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
         }
         </style>
         <title></title>
@@ -30,9 +31,7 @@
         <script src="js/rbush.min.js"></script>
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
-        <script src="js/tailDT.js"></script>
-<script src="js/nouislider.min.js"></script>
-<script src="js/wNumb.js"></script>
+        <script src="js/leaflet-measure.js"></script>
         <script src="data/name_ChattanoogaBicycleTransitSystem_1.js"></script>
         <script>
         var highlightLayer;
@@ -52,7 +51,7 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[34.98925314076062,-85.28278931794163],[35.06993702349804,-85.17341824270036]]);
+        }).fitBounds([[34.99443695160264,-85.31228748519415],[35.07511571950993,-85.20291640995288]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -70,6 +69,18 @@
          return tempDiv.innerHTML;
         }
         L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
+        var measureControl = new L.Control.Measure({
+            position: 'topleft',
+            primaryLengthUnit: 'meters',
+            secondaryLengthUnit: 'kilometers',
+            primaryAreaUnit: 'sqmeters',
+            secondaryAreaUnit: 'hectares'
+        });
+        measureControl.addTo(map);
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .innerHTML = '';
+        document.getElementsByClassName('leaflet-control-measure-toggle')[0]
+        .className += ' fas fa-ruler';
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
@@ -97,6 +108,14 @@
             });
             var popupContent = '<table>\
                     <tr>\
+                        <th scope="row">full_id</th>\
+                        <td class="visible-with-data" id="full_id">' + (feature.properties['full_id'] !== null ? autolinker.link(feature.properties['full_id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">osm_id</th>\
+                        <td class="visible-with-data" id="osm_id">' + (feature.properties['osm_id'] !== null ? autolinker.link(feature.properties['osm_id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
                         <th scope="row">osm_type</th>\
                         <td class="visible-with-data" id="osm_type">' + (feature.properties['osm_type'] !== null ? autolinker.link(feature.properties['osm_type'].toLocaleString()) : '') + '</td>\
                     </tr>\
@@ -117,8 +136,7 @@
                         <td class="visible-with-data" id="operator">' + (feature.properties['operator'] !== null ? autolinker.link(feature.properties['operator'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">network</th>\
-                        <td class="visible-with-data" id="network">' + (feature.properties['network'] !== null ? autolinker.link(feature.properties['network'].toLocaleString()) : '') + '</td>\
+                        <td class="visible-with-data" id="network"colspan="2"><strong>network</strong><br />' + (feature.properties['network'] !== null ? autolinker.link(feature.properties['network'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -136,7 +154,7 @@
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
-                weight: 8.0,
+                weight: 4.0,
                 fillOpacity: 0,
                 interactive: true,
             }
@@ -158,145 +176,6 @@
         var baseMaps = {};
         L.control.layers(baseMaps,{'<img src="legend/name_ChattanoogaBicycleTransitSystem_1.png" /> name_Chattanooga Bicycle Transit System': layer_name_ChattanoogaBicycleTransitSystem_1,"OpenStreetMap": layer_OpenStreetMap_0,}).addTo(map);
         setBounds();
-        var mapDiv = document.getElementById('map');
-        var row = document.createElement('div');
-        row.className="row";
-        row.id="all";
-        row.style.height = "100%";
-        var col1 = document.createElement('div');
-        col1.className="col9";
-        col1.id = "mapWindow";
-        col1.style.height = "99%";
-        col1.style.width = "80%";
-        col1.style.display = "inline-block";
-        var col2 = document.createElement('div');
-        col2.className="col3";
-        col2.id = "menu";
-        col2.style.display = "inline-block";
-        mapDiv.parentNode.insertBefore(row, mapDiv);
-        document.getElementById("all").appendChild(col1);
-        document.getElementById("all").appendChild(col2);
-        col1.appendChild(mapDiv)
-        var Filters = {"osm_id": "str"};
-        function filterFunc() {
-          map.eachLayer(function(lyr){
-          if ("options" in lyr && "dataVar" in lyr["options"]){
-            features = this[lyr["options"]["dataVar"]].features.slice(0);
-            try{
-              for (key in Filters){
-                keyS = key.replace(/[^a-zA-Z0-9_]/g, "")
-                if (Filters[key] == "str" || Filters[key] == "bool"){
-                  var selection = [];
-                  var options = document.getElementById("sel_" + keyS).options
-                  for (var i=0; i < options.length; i++) {
-                    if (options[i].selected) selection.push(options[i].value);
-                  }
-                    try{
-                      if (key in features[0].properties){
-                        for (i = features.length - 1;
-                          i >= 0; --i){
-                          if (selection.indexOf(
-                          features[i].properties[key])<0
-                          && selection.length>0) {
-                          features.splice(i,1);
-                          }
-                        }
-                      }
-                    } catch(err){
-                  }
-                }
-                if (Filters[key] == "int"){
-                  sliderVals =  document.getElementById(
-                    "div_" + keyS).noUiSlider.get();
-                  try{
-                    if (key in features[0].properties){
-                    for (i = features.length - 1; i >= 0; --i){
-                      if (parseInt(features[i].properties[key])
-                          < sliderVals[0]
-                          || parseInt(features[i].properties[key])
-                          > sliderVals[1]){
-                            features.splice(i,1);
-                          }
-                        }
-                      }
-                    } catch(err){
-                    }
-                  }
-                if (Filters[key] == "real"){
-                  sliderVals =  document.getElementById(
-                    "div_" + keyS).noUiSlider.get();
-                  try{
-                    if (key in features[0].properties){
-                    for (i = features.length - 1; i >= 0; --i){
-                      if (features[i].properties[key]
-                          < sliderVals[0]
-                          || features[i].properties[key]
-                          > sliderVals[1]){
-                            features.splice(i,1);
-                          }
-                        }
-                      }
-                    } catch(err){
-                    }
-                  }
-                if (Filters[key] == "date"
-                  || Filters[key] == "datetime"
-                  || Filters[key] == "time"){
-                  try{
-                    if (key in features[0].properties){
-                      HTMLkey = key.replace(/[&\/\\#,+()$~%.'":*?<>{} ]/g, '');
-                      startdate = document.getElementById("dat_" +
-                        HTMLkey + "_date1").value.replace(" ", "T");
-                      enddate = document.getElementById("dat_" +
-                        HTMLkey + "_date2").value.replace(" ", "T");
-                      for (i = features.length - 1; i >= 0; --i){
-                        if (features[i].properties[key] < startdate
-                          || features[i].properties[key] > enddate){
-                          features.splice(i,1);
-                        }
-                      }
-                    }
-                  } catch(err){
-                  }
-                }
-              }
-            } catch(err){
-            }
-          this[lyr["options"]["layerName"]].clearLayers();
-          this[lyr["options"]["layerName"]].addData(features);
-          }
-          })
-        }
-            document.getElementById("menu").appendChild(
-                document.createElement("div"));
-            var div_osm_id = document.createElement('div');
-            div_osm_id.id = "div_osm_id";
-            div_osm_id.className= "filterselect";
-            document.getElementById("menu").appendChild(div_osm_id);
-            sel_osm_id = document.createElement('select');
-            sel_osm_id.multiple = true;
-            sel_osm_id.size = 1;
-            sel_osm_id.id = "sel_osm_id";
-            var osm_id_options_str = "<option value='' unselected></option>";
-            sel_osm_id.onchange = function(){filterFunc()};
-            osm_id_options_str  += '<option value="17056792">17056792</option>';
-            sel_osm_id.innerHTML = osm_id_options_str;
-            div_osm_id.appendChild(sel_osm_id);
-            var lab_osm_id = document.createElement('div');
-            lab_osm_id.innerHTML = 'osm_id';
-            lab_osm_id.className = 'filterlabel';
-            div_osm_id.appendChild(lab_osm_id);
-            var reset_osm_id = document.createElement('div');
-            reset_osm_id.innerHTML = 'clear filter';
-            reset_osm_id.className = 'filterlabel';
-            reset_osm_id.onclick = function() {
-                var options = document.getElementById("sel_osm_id").options;
-                for (var i=0; i < options.length; i++) {
-                    options[i].selected = false;
-                }
-                filterFunc();
-            };
-            div_osm_id.appendChild(reset_osm_id);
         </script>
     </body>
 </html>
