@@ -47,10 +47,10 @@
         // L.geoJson function is used to parse geojson file and load on to map
            L.geoJson(data,{
            onEachFeature: function(feature, featureLayer) {
-           featureLayer.bindPopup(feature.properties.NAME_1);
+           featureLayer.bindPopup(feature.properties.name);
            }
-           }).addTo(newMap);
-           newMap.fitBounds(datalayer.getBounds());
+           }).addTo(map);
+           map.fitBounds(datalayer.getBounds());
            }); 
         
 
