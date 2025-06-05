@@ -39,14 +39,20 @@
         var map = L.map('mapid', {
                  center: [35.1908,-85.1380],
                  zoom: 10,
-                 layers: [grayscale] });
+                 layers: [osm] });
 
 
         // loading GeoJSON file - Here my html and usa_adm.geojson file resides in same folder
           $.getJSON("https://northrivergeo.github.io/bikeanooga/data/bicycle_final.geojson",function(data){
         // L.geoJson function is used to parse geojson file and load on to map
-           L.geoJson(data).addTo(map);
-          });
+           L.geoJson(data,{
+           onEachFeature: function(feature, featureLayer) {
+           featureLayer.bindPopup(feature.properties.NAME_1);
+           }
+           }).addTo(newMap);
+           newMap.fitBounds(datalayer.getBounds());
+           }); 
+        
 
 
     </script>
