@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="Overpass API 0.7.62.5 1bd436f1">
 <note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
-<meta osm_base="2025-06-05T11:07:40Z"/>
+<meta osm_base="2025-06-05T13:05:35Z"/>
 
   <way id="19486604">
     <nd ref="9743561505"/>
@@ -546,25 +546,6 @@
     <tag k="tiger:zip_left" v="37411"/>
     <tag k="tiger:zip_right" v="37411"/>
   </way>
-  <way id="19496067">
-    <nd ref="202623165"/>
-    <nd ref="202623169"/>
-    <nd ref="202623172"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="highway" v="residential"/>
-    <tag k="name" v="Lynnbrook Avenue"/>
-    <tag k="tiger:cfcc" v="A41"/>
-    <tag k="tiger:county" v="Hamilton, TN"/>
-    <tag k="tiger:name_base" v="Lynnbrook"/>
-    <tag k="tiger:name_type" v="Ave"/>
-    <tag k="tiger:reviewed" v="no"/>
-    <tag k="tiger:separated" v="no"/>
-    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070829"/>
-    <tag k="tiger:tlid" v="59308330:59308335"/>
-    <tag k="tiger:upload_uuid" v="bulk_upload.pl-91a61642-9d87-4f7b-a49d-af7d8b0d7ecf"/>
-    <tag k="tiger:zip_left" v="37404"/>
-    <tag k="tiger:zip_right" v="37404"/>
-  </way>
   <way id="19496335">
     <nd ref="202625248"/>
     <nd ref="10928999090"/>
@@ -678,30 +659,6 @@
     <tag k="tiger:reviewed" v="no"/>
     <tag k="tiger:zip_left" v="37402"/>
     <tag k="tiger:zip_right" v="37402"/>
-  </way>
-  <way id="19497290">
-    <nd ref="202632919"/>
-    <nd ref="10921075641"/>
-    <nd ref="202632935"/>
-    <nd ref="202632940"/>
-    <nd ref="1846753635"/>
-    <nd ref="202632944"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="highway" v="residential"/>
-    <tag k="name" v="Eveningside Drive"/>
-    <tag k="sidewalk" v="both"/>
-    <tag k="surface" v="asphalt"/>
-    <tag k="tiger:cfcc" v="A41"/>
-    <tag k="tiger:county" v="Hamilton, TN"/>
-    <tag k="tiger:name_base" v="Eveningside"/>
-    <tag k="tiger:name_type" v="Dr"/>
-    <tag k="tiger:reviewed" v="no"/>
-    <tag k="tiger:separated" v="no"/>
-    <tag k="tiger:source" v="tiger_import_dch_v0.6_20070829"/>
-    <tag k="tiger:tlid" v="59308310:59323315:59323317:59323319:59308270"/>
-    <tag k="tiger:upload_uuid" v="bulk_upload.pl-91a61642-9d87-4f7b-a49d-af7d8b0d7ecf"/>
-    <tag k="tiger:zip_left" v="37404"/>
-    <tag k="tiger:zip_right" v="37404"/>
   </way>
   <way id="19498173">
     <nd ref="202639162"/>
@@ -863,41 +820,6 @@
     <tag k="tiger:reviewed" v="yes"/>
     <tag k="tiger:zip_left" v="37411"/>
     <tag k="tiger:zip_right" v="37411"/>
-  </way>
-  <way id="19499659">
-    <nd ref="202650798"/>
-    <nd ref="10920241258"/>
-    <nd ref="202650802"/>
-    <nd ref="202650809"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="highway" v="residential"/>
-    <tag k="name" v="South Hawthorne Street"/>
-    <tag k="sidewalk" v="both"/>
-    <tag k="surface" v="asphalt"/>
-    <tag k="tiger:cfcc" v="A41"/>
-    <tag k="tiger:county" v="Hamilton, TN"/>
-    <tag k="tiger:name_base" v="Hawthorne"/>
-    <tag k="tiger:name_direction_prefix" v="S"/>
-    <tag k="tiger:name_type" v="St"/>
-    <tag k="tiger:reviewed" v="no"/>
-    <tag k="tiger:zip_left" v="37404"/>
-    <tag k="tiger:zip_right" v="37404"/>
-  </way>
-  <way id="19499712">
-    <nd ref="202651244"/>
-    <nd ref="202651247"/>
-    <nd ref="3588280275"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="highway" v="residential"/>
-    <tag k="name" v="East 16th Street"/>
-    <tag k="tiger:cfcc" v="A41"/>
-    <tag k="tiger:county" v="Hamilton, TN"/>
-    <tag k="tiger:name_base" v="16th"/>
-    <tag k="tiger:name_direction_prefix" v="E"/>
-    <tag k="tiger:name_type" v="St"/>
-    <tag k="tiger:reviewed" v="no"/>
-    <tag k="tiger:zip_left" v="37404"/>
-    <tag k="tiger:zip_right" v="37404"/>
   </way>
   <way id="19499870">
     <nd ref="1830113349"/>
@@ -1429,48 +1351,6 @@
     <tag k="tiger:zip_left" v="37404"/>
     <tag k="tiger:zip_right" v="37404"/>
   </way>
-  <way id="19504109">
-    <nd ref="202688195"/>
-    <nd ref="10921075642"/>
-    <nd ref="202655368"/>
-    <nd ref="2334598706"/>
-    <nd ref="2334598690"/>
-    <nd ref="1846753624"/>
-    <nd ref="202654428"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="highway" v="residential"/>
-    <tag k="name" v="Morningside Drive"/>
-    <tag k="sidewalk" v="both"/>
-    <tag k="surface" v="asphalt"/>
-    <tag k="tiger:cfcc" v="A41"/>
-    <tag k="tiger:county" v="Hamilton, TN"/>
-    <tag k="tiger:name_base" v="Morningside"/>
-    <tag k="tiger:name_type" v="Dr"/>
-    <tag k="tiger:reviewed" v="no"/>
-    <tag k="tiger:zip_left" v="37404"/>
-    <tag k="tiger:zip_right" v="37404"/>
-  </way>
-  <way id="19504735">
-    <nd ref="202644881"/>
-    <nd ref="10920232434"/>
-    <nd ref="1531411139"/>
-    <nd ref="10920232435"/>
-    <nd ref="202692567"/>
-    <nd ref="4193892263"/>
-    <nd ref="10920232436"/>
-    <nd ref="202651247"/>
-    <nd ref="202692570"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="highway" v="residential"/>
-    <tag k="name" v="Gulf Street"/>
-    <tag k="tiger:cfcc" v="A41"/>
-    <tag k="tiger:county" v="Hamilton, TN"/>
-    <tag k="tiger:name_base" v="Gulf"/>
-    <tag k="tiger:name_type" v="St"/>
-    <tag k="tiger:reviewed" v="no"/>
-    <tag k="tiger:zip_left" v="37404"/>
-    <tag k="tiger:zip_right" v="37404"/>
-  </way>
   <way id="19505254">
     <nd ref="202666869"/>
     <nd ref="11097239234"/>
@@ -1738,21 +1618,6 @@
     <tag k="tiger:reviewed" v="no"/>
     <tag k="tiger:zip_left" v="37411"/>
     <tag k="tiger:zip_right" v="37411"/>
-  </way>
-  <way id="19509097">
-    <nd ref="202729627"/>
-    <nd ref="10920232437"/>
-    <nd ref="11989229200"/>
-    <nd ref="202651244"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="highway" v="residential"/>
-    <tag k="name" v="Filmore"/>
-    <tag k="tiger:cfcc" v="A41"/>
-    <tag k="tiger:county" v="Hamilton, TN"/>
-    <tag k="tiger:name_base" v="Filmore"/>
-    <tag k="tiger:reviewed" v="no"/>
-    <tag k="tiger:zip_left" v="37408"/>
-    <tag k="tiger:zip_right" v="37408"/>
   </way>
   <way id="19509404">
     <nd ref="202731977"/>
@@ -3124,7 +2989,7 @@
     <tag k="bicycle" v="yes"/>
     <tag k="cycleway" v="shared"/>
     <tag k="highway" v="path"/>
-    <tag k="name" v="The Tennessee Riverwalk"/>
+    <tag k="name" v="Tennessee Riverwalk"/>
     <tag k="operator" v="City of Chattanooga"/>
     <tag k="sac_scale" v="hiking"/>
     <tag k="surface" v="concrete"/>
@@ -3156,7 +3021,7 @@
     <tag k="bicycle" v="yes"/>
     <tag k="foot" v="yes"/>
     <tag k="highway" v="path"/>
-    <tag k="name" v="The Tennessee Riverwalk"/>
+    <tag k="name" v="Tennessee Riverwalk"/>
     <tag k="operator" v="City of Chattanooga"/>
     <tag k="sac_scale" v="hiking"/>
     <tag k="surface" v="concrete"/>
@@ -3199,7 +3064,7 @@
     <tag k="bridge" v="yes"/>
     <tag k="cycleway" v="lane"/>
     <tag k="highway" v="path"/>
-    <tag k="name" v="The Tennessee Riverwalk"/>
+    <tag k="name" v="Tennessee Riverwalk"/>
     <tag k="operator" v="City of Chattanooga"/>
     <tag k="sac_scale" v="hiking"/>
     <tag k="surface" v="wood"/>
@@ -3255,7 +3120,7 @@
     <tag k="bicycle" v="yes"/>
     <tag k="foot" v="yes"/>
     <tag k="highway" v="path"/>
-    <tag k="name" v="The Tennessee Riverwalk"/>
+    <tag k="name" v="Tennessee Riverwalk"/>
     <tag k="operator" v="City of Chattanooga"/>
     <tag k="sac_scale" v="hiking"/>
     <tag k="surface" v="concrete"/>
@@ -3411,7 +3276,7 @@
     <tag k="bicycle" v="yes"/>
     <tag k="foot" v="yes"/>
     <tag k="highway" v="path"/>
-    <tag k="name" v="The Tennessee Riverwalk"/>
+    <tag k="name" v="Tennessee Riverwalk"/>
     <tag k="operator" v="City of Chattanooga"/>
     <tag k="sac_scale" v="hiking"/>
     <tag k="surface" v="concrete"/>
@@ -3513,7 +3378,7 @@
     <tag k="bicycle" v="yes"/>
     <tag k="foot" v="yes"/>
     <tag k="highway" v="path"/>
-    <tag k="name" v="The Tennessee Riverwalk"/>
+    <tag k="name" v="Tennessee Riverwalk"/>
     <tag k="operator" v="City of Chattanooga"/>
     <tag k="sac_scale" v="hiking"/>
     <tag k="surface" v="concrete"/>
@@ -3532,7 +3397,7 @@
     <tag k="bicycle" v="yes"/>
     <tag k="foot" v="yes"/>
     <tag k="highway" v="path"/>
-    <tag k="name" v="The Tennessee Riverwalk"/>
+    <tag k="name" v="Tennessee Riverwalk"/>
     <tag k="operator" v="City of Chattanooga"/>
     <tag k="sac_scale" v="hiking"/>
     <tag k="surface" v="concrete"/>
@@ -4519,7 +4384,7 @@
     <tag k="bicycle" v="yes"/>
     <tag k="foot" v="yes"/>
     <tag k="highway" v="path"/>
-    <tag k="name" v="The Tennessee Riverwalk"/>
+    <tag k="name" v="Tennessee Riverwalk"/>
     <tag k="operator" v="City of Chattanooga"/>
     <tag k="sac_scale" v="hiking"/>
     <tag k="surface" v="concrete"/>
@@ -5574,7 +5439,7 @@
     <tag k="bicycle" v="yes"/>
     <tag k="foot" v="yes"/>
     <tag k="highway" v="path"/>
-    <tag k="name" v="The Tennessee Riverwalk"/>
+    <tag k="name" v="Tennessee Riverwalk"/>
     <tag k="operator" v="City of Chattanooga"/>
     <tag k="sac_scale" v="hiking"/>
     <tag k="surface" v="concrete"/>
@@ -5616,7 +5481,7 @@
     <tag k="bridge" v="yes"/>
     <tag k="foot" v="yes"/>
     <tag k="highway" v="path"/>
-    <tag k="name" v="The Tennessee Riverwalk"/>
+    <tag k="name" v="Tennessee Riverwalk"/>
     <tag k="oneway" v="no"/>
     <tag k="operator" v="City of Chattanooga"/>
     <tag k="sac_scale" v="hiking"/>
@@ -22463,7 +22328,7 @@
     <tag k="bicycle" v="yes"/>
     <tag k="foot" v="yes"/>
     <tag k="highway" v="path"/>
-    <tag k="name" v="The Tennessee Riverwalk"/>
+    <tag k="name" v="Tennessee Riverwalk"/>
     <tag k="operator" v="City of Chattanooga"/>
     <tag k="sac_scale" v="hiking"/>
     <tag k="surface" v="paving_stones"/>
@@ -22499,7 +22364,7 @@
     <tag k="bicycle" v="yes"/>
     <tag k="foot" v="yes"/>
     <tag k="highway" v="path"/>
-    <tag k="name" v="Tennessee River Walk"/>
+    <tag k="name" v="Tennessee Riverwalk"/>
     <tag k="operator" v="City of Chattanooga"/>
     <tag k="sac_scale" v="hiking"/>
     <tag k="surface" v="concrete"/>
@@ -32150,24 +32015,11 @@
   <node id="202611002" lat="35.0240670" lon="-85.2871230"/>
   <node id="202611007" lat="35.0230950" lon="-85.2876665"/>
   <node id="202611011" lat="35.0222129" lon="-85.2881455"/>
-  <node id="202623169" lat="35.0244456" lon="-85.2820061"/>
-  <node id="202623172" lat="35.0240945" lon="-85.2821993"/>
   <node id="202625248" lat="35.0204913" lon="-85.2867194"/>
   <node id="202631057" lat="35.0194343" lon="-85.2837401"/>
-  <node id="202632935" lat="35.0254064" lon="-85.2846324"/>
-  <node id="202632940" lat="35.0239428" lon="-85.2854200"/>
-  <node id="202632944" lat="35.0235728" lon="-85.2856169"/>
   <node id="202641001" lat="35.0204117" lon="-85.2831980"/>
-  <node id="202650802" lat="35.0247153" lon="-85.2827694"/>
-  <node id="202650809" lat="35.0228797" lon="-85.2837762"/>
-  <node id="202654428" lat="35.0232209" lon="-85.2846682"/>
-  <node id="202655368" lat="35.0250435" lon="-85.2836555"/>
   <node id="202660284" lat="35.0223030" lon="-85.2821903"/>
   <node id="202729522" lat="35.0214483" lon="-85.2826519"/>
-  <node id="1846753624" lat="35.0232588" lon="-85.2846303"/>
-  <node id="1846753635" lat="35.0236162" lon="-85.2856136"/>
-  <node id="2334598690" lat="35.0232891" lon="-85.2846137"/>
-  <node id="2334598706" lat="35.0240852" lon="-85.2841789"/>
   <node id="3931185482" lat="35.0198812" lon="-85.2870417"/>
   <node id="7970305101" lat="35.0201018" lon="-85.2869251"/>
   <node id="10928965896" lat="35.0195407" lon="-85.2836811"/>
@@ -32202,27 +32054,15 @@
   <node id="11921596731" lat="35.0316964" lon="-85.2956443"/>
   <node id="202634632" lat="35.0314315" lon="-85.2949400"/>
   <node id="202634652" lat="35.0312579" lon="-85.2944648"/>
-  <node id="202644881" lat="35.0304671" lon="-85.2895818"/>
-  <node id="202651244" lat="35.0293164" lon="-85.2921103"/>
-  <node id="202651247" lat="35.0287351" lon="-85.2904699"/>
   <node id="202692567" lat="35.0296305" lon="-85.2900009"/>
-  <node id="202692570" lat="35.0285019" lon="-85.2905897"/>
   <node id="202729627" lat="35.0302157" lon="-85.2916222"/>
   <node id="202753296" lat="35.0306640" lon="-85.2927668"/>
   <node id="202753308" lat="35.0308498" lon="-85.2932725"/>
-  <node id="1531411139" lat="35.0300055" lon="-85.2898224"/>
-  <node id="3588280275" lat="35.0285285" lon="-85.2899591"/>
-  <node id="4193892263" lat="35.0296013" lon="-85.2900162"/>
   <node id="7046110538" lat="35.0293420" lon="-85.2891941"/>
   <node id="7301689909" lat="35.0309193" lon="-85.2934756"/>
   <node id="7301689912" lat="35.0307289" lon="-85.2929435"/>
   <node id="7301689929" lat="35.0300960" lon="-85.2912906"/>
-  <node id="10920232434" lat="35.0304205" lon="-85.2896061"/>
-  <node id="10920232435" lat="35.0296925" lon="-85.2899714"/>
-  <node id="10920232436" lat="35.0295653" lon="-85.2900351"/>
-  <node id="10920232437" lat="35.0301578" lon="-85.2916536"/>
   <node id="10920236308" lat="35.0308289" lon="-85.2932155"/>
-  <node id="11989229200" lat="35.0293704" lon="-85.2920810"/>
   <node id="202610941" lat="35.0333893" lon="-85.3000950"/>
   <node id="202610971" lat="35.0335003" lon="-85.3003921"/>
   <node id="202641440" lat="35.0387411" lon="-85.2960266"/>
@@ -32274,8 +32114,6 @@
   <node id="10921035195" lat="35.0289366" lon="-85.2880570"/>
   <node id="10921072334" lat="35.0321848" lon="-85.2833814"/>
   <node id="10921075640" lat="35.0277765" lon="-85.2851114"/>
-  <node id="10921075641" lat="35.0272541" lon="-85.2836380"/>
-  <node id="10921075642" lat="35.0269089" lon="-85.2826499"/>
   <node id="10921081831" lat="35.0313747" lon="-85.2838213"/>
   <node id="10921081832" lat="35.0312610" lon="-85.2838830"/>
   <node id="10921086668" lat="35.0297524" lon="-85.2847021"/>
@@ -32327,7 +32165,6 @@
   <node id="10920241254" lat="35.0261421" lon="-85.2800497"/>
   <node id="10920241255" lat="35.0260653" lon="-85.2800296"/>
   <node id="10920241256" lat="35.0261142" lon="-85.2801699"/>
-  <node id="10920241258" lat="35.0265920" lon="-85.2817526"/>
   <node id="10921081947" lat="35.0292199" lon="-85.2783508"/>
   <node id="10921081949" lat="35.0293257" lon="-85.2782928"/>
   <node id="10921092336" lat="35.0285018" lon="-85.2787430"/>
