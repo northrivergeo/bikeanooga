@@ -52,7 +52,15 @@
            }).addTo(map);
            map.fitBounds(datalayer.getBounds());
            }); 
-        
+       
+	   let layerControl = {
+           "Bike Routes": datalayer
+           
+       }
+
+
+        L.control.layers( baseLayers, layerControl ).addTo( map )
+
 
 
     </script>
