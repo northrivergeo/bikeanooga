@@ -1,6 +1,6 @@
-##Bikanooga##
+##Bikeanooga##
 
-So I'm slowly trying to get a working map of bike lanes and routes in Chattanooga. Eventually I start adding bike parking and Bike Stores. Probably symbolizations on type of lanes. 
+So I'm slowly trying to get a working map of bike lanes and routes in Chattanooga. Eventually I will start adding bike parking and Bike Stores. Probably symbolizations on type of lanes. 
 
 To see it: https://northrivergeo.github.io/bikeanooga/
 
