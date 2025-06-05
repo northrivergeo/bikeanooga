@@ -41,36 +41,6 @@
                  zoom: 10,
                  layers: [grayscale] });
 
-        //create blank layers
-	let bikeroutes = L.layerGroup( ).addTo( map )
-
-        //set up symbols 
-	function createCircleFireMarker( feature, latlng ){
-        // Change the values of these options to change the symbol's appearance
-        let options = {
-          radius: 4,
-          fillColor: "red",
-          color: "black",
-          weight: 1,
-          opacity: 1,
-          fillOpacity: 0.8
-        }
-          return L.circleMarker( latlng, options );
-        }
-	
-	function createCircleHydMarker( feature, latlng ){
-        // Change the values of these options to change the symbol's appearance
-        let options = {
-          radius: 4,
-          fillColor: "blue",
-          color: "black",
-          weight: 1,
-          opacity: 1,
-          fillOpacity: 0.8
-        }
-          return L.circleMarker( latlng, options );
-        }
-          
 
         // loading GeoJSON file - Here my html and usa_adm.geojson file resides in same folder
           $.getJSON("https://northrivergeo.github.io/bikanooga/data/bicycle_final.geojson",function(data){
@@ -78,29 +48,6 @@
            L.geoJson(data).addTo(map);
           });
 
-        jQuery.getJSON( "https://northrivergeo.github.io/tnfiremap/data/firestation.geojson", function( json ){
-           L.geoJSON( json, {
-           onEachFeature: addMyFireData,
-	   pointToLayer: createCircleFireMarker
-           })
-       })
-        
-	jQuery.getJSON( "https://northrivergeo.github.io/tnfiremap/data/hydrant.geojson", function( json ){
-           L.geoJSON( json, {
-           onEachFeature: addMyHydData,
-	   pointToLayer: createCircleHydMarker
-           })
-       })
-	
-
-
-       function addMyFireData( feature, layer ){
-           firelayer.addLayer( layer )
-       } 
-       
-       function addMyHydData( feature, layer ){
-           hydrantlayer.addLayer( layer )
-       } 
 
       let layerControl = {
         "Firestations": firelayer, 
