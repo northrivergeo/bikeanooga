@@ -2,7 +2,7 @@
 <html>
 <head>
 	
-	<title>TN OSM Firemap</title>
+	<title>Bikeanooga</title>
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,8 +42,7 @@
                  layers: [grayscale] });
 
         //create blank layers
-	let firelayer = L.layerGroup( ).addTo( map )
-	let hydrantlayer = L.layerGroup( ).addTo( map )
+	let bikeroutes = L.layerGroup( ).addTo( map )
 
         //set up symbols 
 	function createCircleFireMarker( feature, latlng ){
@@ -71,7 +70,13 @@
         }
           return L.circleMarker( latlng, options );
         }
+          
 
+        // loading GeoJSON file - Here my html and usa_adm.geojson file resides in same folder
+          $.getJSON("https://northrivergeo.github.io/bikanooga/data/bicycle_final.geojson",function(data){
+        // L.geoJson function is used to parse geojson file and load on to map
+           L.geoJson(data).addTo(map);
+          });
 
         jQuery.getJSON( "https://northrivergeo.github.io/tnfiremap/data/firestation.geojson", function( json ){
            L.geoJSON( json, {
