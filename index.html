@@ -48,9 +48,7 @@
 
 	// loading Bike Layer. Eventually this goes away. 
           $.getJSON("https://northrivergeo.github.io/bikeanooga/data/riverwalk.geojson",function(data){
-        // L.geoJson function is used to parse geojson file and load on to map
            var riverWalklayer = L.geoJson(data,{
-	   style : riverwalk_style
            onEachFeature: function(feature, featureLayer) {
            featureLayer.bindPopup(feature.properties.name);
            }
