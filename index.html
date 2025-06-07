@@ -42,7 +42,7 @@
                  layers: [osm] });
 
 	var riverwalk_style ={
-		 "color": '#8d7696',
+		 "color": '#ff4500 ',
                  "weight":  6
                   };
 
@@ -62,11 +62,12 @@
           $.getJSON("https://northrivergeo.github.io/bikeanooga/data/riverwalk.geojson",function(data){
         // L.geoJson function is used to parse geojson file and load on to map
            var riverWalklayer = L.geoJson(data,{
+	   style : riverwalk_style
            onEachFeature: function(feature, featureLayer) {
            featureLayer.bindPopup(feature.properties.name);
            }
            }).addTo(map);
-           map.fitBounds(datalayer.getBounds());
+           map.fitBounds(riverWalklayer.getBounds());
            }); 
        
 	   let layerControl = {
@@ -75,7 +76,7 @@
            }
 
 
-        L.control.layers( baseLayers, layerControl ).addTo( map )
+        L.control.layers(baseLayers, layerControl ).addTo( map )
 
 
 
