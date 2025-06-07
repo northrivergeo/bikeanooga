@@ -45,6 +45,16 @@
 		 "color": '#ff4500 ',
                  "weight":  6
                   };
+	// loading Bike Layer. Eventually this goes away. 
+          $.getJSON("https://northrivergeo.github.io/bikeanooga/data/riverwalk.geojson",function(data){
+        // L.geoJson function is used to parse geojson file and load on to map
+           var riverWalklayer = L.geoJson(data,{
+	   style : riverwalk_style
+           onEachFeature: function(feature, featureLayer) {
+           featureLayer.bindPopup(feature.properties.name);
+           }
+           }).addTo(map);
+           map.fitBounds(riverWalklayer.getBounds());
 
 
         // loading Bike Layer. Eventually this goes away. 
@@ -58,18 +68,6 @@
            map.fitBounds(datalayer.getBounds());
            }); 
         
-	// loading Bike Layer. Eventually this goes away. 
-          $.getJSON("https://northrivergeo.github.io/bikeanooga/data/riverwalk.geojson",function(data){
-        // L.geoJson function is used to parse geojson file and load on to map
-           var riverWalklayer = L.geoJson(data,{
-	   style : riverwalk_style
-           onEachFeature: function(feature, featureLayer) {
-           featureLayer.bindPopup(feature.properties.name);
-           }
-           }).addTo(map);
-           map.fitBounds(riverWalklayer.getBounds());
-           }); 
-       
 	   let layerControl = {
            "Bike Routes": datalayer,
            "Tennessee Riverwalk": riverWalklayer
