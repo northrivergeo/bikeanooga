@@ -41,8 +41,13 @@
                  zoom: 10,
                  layers: [osm] });
 
+	var riverwalk_style = {
+		 "color": '' "color": '#8d7696',
+                 "weight":  6,
+                  };
 
-        // loading GeoJSON file - Here my html and usa_adm.geojson file resides in same folder
+
+        // loading Bike Layer. Eventually this goes away. 
           $.getJSON("https://northrivergeo.github.io/bikeanooga/data/bicycle_final.geojson",function(data){
         // L.geoJson function is used to parse geojson file and load on to map
            var datalayer = L.geoJson(data,{
@@ -52,11 +57,22 @@
            }).addTo(map);
            map.fitBounds(datalayer.getBounds());
            }); 
+        
+	// loading Bike Layer. Eventually this goes away. 
+          $.getJSON("https://northrivergeo.github.io/bikeanooga/data/riverwalk.geojson",function(data){
+        // L.geoJson function is used to parse geojson file and load on to map
+           var riverWalklayer = L.geoJson(data,{
+           onEachFeature: function(feature, featureLayer) {
+           featureLayer.bindPopup(feature.properties.name);
+           }
+           }).addTo(map);
+           map.fitBounds(datalayer.getBounds());
+           }); 
        
 	   let layerControl = {
-           "Bike Routes": datalayer
-           
-       }
+           "Bike Routes": datalayer,
+           "Tennessee Riverwalk": riverWalklayer
+           }
 
 
         L.control.layers( baseLayers, layerControl ).addTo( map )
