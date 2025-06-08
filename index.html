@@ -46,34 +46,24 @@
                  "weight":  6
                   };
 	
-	var bikelayer_style ={
-		 "color": '#ff4500 ',
-                 "weight":  3
-                  };
-
-        fetch('data/locations.geojson')
-           .then(response => response.json())
-           .then(data => {
-               const geojsonLayer = L.geoJSON(data, {
-	       style: {
-                   color: '#ff7800',
-                   weight: 2,
-                   }
-                  onEachFeature: function(feature, layer) {
-                    layer.bindPopup(feature.properties.name);
-               }
-            }).addTo(map);
-         });
-    
+     fetch('https://northrivergeo.github.io/bikeanooga/data/bicycle_final.geojson')
+       .then(response => response.json())
+       .then(data => {
+        const geojsonLayer = L.geoJSON(data, {
+            onEachFeature: function(feature, layer) {
+                layer.bindPopup(feature.properties.name);
+            }
+        }).addTo(map);
+      }); 
 	
 
 
-      let layerControl = {
-      "Bike Routes": datalayer,
-           }
+//      let layerControl = {
+//      "Bike Routes": datalayer,
+//          }
 
 
-        L.control.layers(baseLayers, layerControl ).addTo( map )
+//        L.control.layers(baseLayers, layerControl ).addTo( map )
 
 
 
