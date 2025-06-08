@@ -52,10 +52,27 @@
                   };
 
         // load GeoJSON from an external file
-          fetch("./data/bicycle_final.geojson").then(res => res.json()).then(bicycledata => {
+        //  fetch("./data/bicycle_final.geojson").then(res => res.json()).then(bicycledata => {
         // add GeoJSON layer to the map once the file is loaded
-		  L.geoJson(bicycledata, {style: bikelayer_style}).addTo(map);
-        });
+	//  L.geoJson(bicycledata, {style: bikelayer_style}).addTo(map);
+        //});
+
+	/ loading Bike Layer. Eventually this goes away.
+          $.getJSON("https://northrivergeo.github.io/bikeanooga/data/bicycle_final.geojson",function(data){
+        // L.geoJson function is used to parse geojson file and load on to map
+		  var datalayer = L.geoJson(data, {style: bikelayer_style}
+           onEachFeature: function(feature, featureLayer) {
+           featureLayer.bindPopup(feature.properties.name);
+           }
+           }).addTo(map);
+           map.fitBounds(datalayer.getBounds());
+           });
+
+	   let layerControl = {
+           "Bike Routes": datalayer,
+           "Tennessee Riverwalk": riverWalklayer
+           }
+
            
         
 	   let layerControl = {
