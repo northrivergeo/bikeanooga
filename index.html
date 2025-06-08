@@ -52,15 +52,15 @@
                   };
 
         // load GeoJSON from an external file
-          fetch("./data/bicycle_final.geojson").then(res => res.json()).then(data => {
+          fetch("./data/bicycle_final.geojson").then(res => res.json()).then(bicycledata => {
         // add GeoJSON layer to the map once the file is loaded
-		  L.geoJson(data, {style: bikelayer_style}).addTo(map);
+		  L.geoJson(bicycledata, {style: bikelayer_style}).addTo(map);
         });
            
         
 	   let layerControl = {
-           "Bike Routes": datalayer,
-           "Tennessee Riverwalk": riverWalklayer
+           "Bike Routes": bicycledata,
+           "Tennessee Riverwalk": riverwalklayer
            }
 
 
