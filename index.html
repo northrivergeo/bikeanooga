@@ -51,13 +51,10 @@
                  "weight":  3
                   };
 
-
-
-
         // load GeoJSON from an external file
           fetch("./data/bicycle_final.geojson").then(res => res.json()).then(data => {
         // add GeoJSON layer to the map once the file is loaded
-          L.geoJson(data).addTo(map);
+		  L.geoJson(data, {style: bikelayer_style}).addTo(map);
         });
            
         
