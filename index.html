@@ -54,7 +54,7 @@
        // loading Bike Layer. Eventually this goes away.
          $.getJSON("https://northrivergeo.github.io/bikeanooga/data/bicycle_final.geojson",function(data){
        // L.geoJson function is used to parse geojson file and load on to map
-          var datalayer = L.geoJson(data, {style: bikelayer_style}
+          var datalayer = L.geoJson(data
           onEachFeature: function(feature, featureLayer) {
           featureLayer.bindPopup(feature.properties.name);
           }
