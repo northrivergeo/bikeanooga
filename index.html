@@ -41,22 +41,27 @@
                  zoom: 10,
                  layers: [osm] });
 
-	var riverwalk_style ={
-		 "color": '#ff4500 ',
-                 "weight":  6
-                  };
+    var riverwalk = L.geoJson(null, {
+    style: function(feature) {
+        return {
+            "color": "black",
+	    "weight": 4
+        };
+    },
+    onEachFeature: function(feature, layer) {
+        riverwalkSearch.push({
+            name: layer.feature.properties.name,
+            source: "Riverwalk",
+            id: L.stamp(layer),
+            bounds: layer.getBounds()
+        });
+    }
+});
 
+    $.getJSON("https://northrivergeo.github.io/bikeanooga/data/riverwalk_final.geojson", function(data) {
+        boroughs.addData(data);
+    });
 
-        // loading Bike Layer. Eventually this goes away. 
-          $.getJSON("https://northrivergeo.github.io/bikeanooga/data/bicycle_final.geojson",function(data){
-        // L.geoJson function is used to parse geojson file and load on to map
-           var datalayer = L.geoJson(data,{
-           onEachFeature: function(feature, featureLayer) {
-           featureLayer.bindPopup(feature.properties.name);
-           }
-           }).addTo(map);
-           map.fitBounds(datalayer.getBounds());
-           }); 
         
 	   let layerControl = {
            "Bike Routes": datalayer,
