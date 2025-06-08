@@ -52,14 +52,13 @@
                   };
 
 
-        // loading Bike Layer. Eventually this goes away. 
-          $.getJSON("https://northrivergeo.github.io/bikeanooga/data/bicycle_final.geojson",function(data){
-        // L.geoJson function is used to parse geojson file and load on to map
-           var datalayer = L.geoJson(data,{
-		   style: bikelayer_style}
-                   featureLayer.bindPopup(feature.properties.name);
-	           }).addTo(map);
-           map.fitBounds(datalayer.getBounds()));
+
+
+        // load GeoJSON from an external file
+          fetch("./data/bicycle_final.geojson").then(res => res.json()).then(data => {
+        // add GeoJSON layer to the map once the file is loaded
+          L.geoJson(data).addTo(map);
+        });
            
         
 	   let layerControl = {
