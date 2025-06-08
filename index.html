@@ -58,10 +58,9 @@
            var datalayer = L.geoJson(data,{
 		   style: bikelayer_style}
                    featureLayer.bindPopup(feature.properties.name);
+	           }).addTo(map);
+           map.fitBounds(datalayer.getBounds()));
            
-                   ).addTo(map);
-           map.fitBounds(datalayer.getBounds());
-           }); 
         
 	   let layerControl = {
            "Bike Routes": datalayer,
