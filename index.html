@@ -45,16 +45,39 @@
 		 "color": '#ff4500 ',
                  "weight":  6
                   };
+
 	
+     fetch('https://northrivergeo.github.io/bikeanooga/data/riverwalk_final.geojson')
+       .then(response => response.json())
+       .then(data => {
+        const riverwalklayer = L.geoJSON(data, {
+                style: function(feature) { 
+		return { "color": '#0000cd'}	
+		}
+        }).addTo(map);
+      }); 
+     
+//	fetch('https://northrivergeo.github.io/bikeanooga/data/schick_final.geojson')
+//       .then(response => response.json())
+//       .then(data => {
+//        const schick = L.geoJSON(data, {
+//                style: function(feature) { 
+//        return { "color": '#008000'}	
+//       }
+//        }).addTo(map);
+//      }); 
+     
      fetch('https://northrivergeo.github.io/bikeanooga/data/bicycle_final.geojson')
        .then(response => response.json())
        .then(data => {
-        const geojsonLayer = L.geoJSON(data, {
-            onEachFeature: function(feature, layer) {
-                layer.bindPopup(feature.properties.name);
-            }
+        const bikelayer = L.geoJSON(data, {
+                style: function(feature) { 
+		return { color: '#ff7800'}	
+		}
         }).addTo(map);
       }); 
+	
+	
 	
 
 
