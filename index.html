@@ -72,12 +72,10 @@
        .then(data => {
         const bikelayer = L.geoJSON(data, {
                 style: function(feature) { 
-		return { color: '#ff7800'}	
-		}
+        return {"color": '#ff7800'}	
+        }
         }).addTo(map);
       }); 
-	
-	
 	
 
 

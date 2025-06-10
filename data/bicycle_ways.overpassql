@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="Overpass API 0.7.62.7 375dc00a">
 <note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
-<meta osm_base="2025-06-09T01:52:25Z"/>
+<meta osm_base="2025-06-10T13:03:30Z"/>
 
   <way id="19486604">
     <nd ref="9743561505"/>
@@ -14940,21 +14940,6 @@
     <tag k="service" v="driveway"/>
     <tag k="surface" v="concrete"/>
   </way>
-  <way id="372338589">
-    <nd ref="3758953099"/>
-    <nd ref="3758953100"/>
-    <nd ref="3758953101"/>
-    <nd ref="3758953102"/>
-    <nd ref="3758953103"/>
-    <nd ref="3758953104"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
   <way id="372706833">
     <nd ref="3762608122"/>
     <nd ref="3762608123"/>
@@ -15070,185 +15055,6 @@
     <tag k="motor_vehicle" v="no"/>
     <tag k="service" v="driveway"/>
   </way>
-  <way id="373421218">
-    <nd ref="3768932706"/>
-    <nd ref="2491220400"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="373421343">
-    <nd ref="3768936077"/>
-    <nd ref="3768936078"/>
-    <nd ref="3768936079"/>
-    <nd ref="3768936080"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="373422397">
-    <nd ref="3768941087"/>
-    <nd ref="3768941091"/>
-    <nd ref="3768941088"/>
-    <nd ref="3768941089"/>
-    <nd ref="3768941090"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="373422425">
-    <nd ref="3768940984"/>
-    <nd ref="3768941585"/>
-    <nd ref="3768940985"/>
-    <nd ref="3768940986"/>
-    <nd ref="3768940987"/>
-    <nd ref="3768940988"/>
-    <nd ref="3768940989"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="373422615">
-    <nd ref="921103032"/>
-    <nd ref="3768942906"/>
-    <nd ref="3768942907"/>
-    <nd ref="3768942908"/>
-    <nd ref="3768942909"/>
-    <nd ref="3768942910"/>
-    <nd ref="3768942911"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="375579910">
-    <nd ref="10765393592"/>
-    <nd ref="3789365323"/>
-    <nd ref="3789365324"/>
-    <nd ref="1886746005"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="375580168">
-    <nd ref="3789367990"/>
-    <nd ref="3789367991"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="375580254">
-    <nd ref="3789367152"/>
-    <nd ref="3789367153"/>
-    <nd ref="3789367154"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="375580376">
-    <nd ref="3789360721"/>
-    <nd ref="3789360722"/>
-    <nd ref="202630025"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="375580465">
-    <nd ref="3789367583"/>
-    <nd ref="3789367584"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="375580663">
-    <nd ref="3789369446"/>
-    <nd ref="3789369447"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="375581071">
-    <nd ref="3789375953"/>
-    <nd ref="3789375954"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="375581199">
-    <nd ref="3789378219"/>
-    <nd ref="3789378220"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="375581329">
-    <nd ref="3789377392"/>
-    <nd ref="3789377393"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="375581367">
-    <nd ref="3789379182"/>
-    <nd ref="3789379183"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
   <way id="375581382">
     <nd ref="3789379123"/>
     <nd ref="3789379124"/>
@@ -15268,38 +15074,6 @@
     <tag k="highway" v="service"/>
     <tag k="horse" v="no"/>
     <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="375963124">
-    <nd ref="3792984986"/>
-    <nd ref="3792984987"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="375963280">
-    <nd ref="3792987331"/>
-    <nd ref="3792987332"/>
-    <nd ref="3792987333"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="375963400">
-    <nd ref="3792992257"/>
-    <nd ref="3792992258"/>
-    <nd ref="3792992259"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
     <tag k="service" v="driveway"/>
     <tag k="surface" v="asphalt"/>
   </way>
@@ -15335,61 +15109,6 @@
     <tag k="motor_vehicle" v="yes"/>
     <tag k="service" v="driveway"/>
     <tag k="surface" v="unpaved"/>
-  </way>
-  <way id="375967116">
-    <nd ref="3793029107"/>
-    <nd ref="3793029106"/>
-    <nd ref="3793029108"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="375967126">
-    <nd ref="3793030258"/>
-    <nd ref="3793029154"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="unpaved"/>
-  </way>
-  <way id="375967139">
-    <nd ref="3793030167"/>
-    <nd ref="3793030168"/>
-    <nd ref="3793030169"/>
-    <nd ref="3793030170"/>
-    <nd ref="3793030171"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-  </way>
-  <way id="375967237">
-    <nd ref="3793030048"/>
-    <nd ref="3793030049"/>
-    <nd ref="3793030050"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-  </way>
-  <way id="375967428">
-    <nd ref="3793033110"/>
-    <nd ref="3793033111"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
   </way>
   <way id="375968239">
     <nd ref="3793037371"/>
@@ -15436,56 +15155,6 @@
     <tag k="motor_vehicle" v="yes"/>
     <tag k="service" v="driveway"/>
   </way>
-  <way id="375969632">
-    <nd ref="3793040841"/>
-    <nd ref="3793040842"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-  </way>
-  <way id="375969831">
-    <nd ref="3793052412"/>
-    <nd ref="3793052413"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-  </way>
-  <way id="375970170">
-    <nd ref="3793057229"/>
-    <nd ref="3793057230"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-  </way>
-  <way id="375970229">
-    <nd ref="3793058516"/>
-    <nd ref="3793058517"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-  </way>
-  <way id="375970343">
-    <nd ref="3793030314"/>
-    <nd ref="3793030315"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-  </way>
   <way id="375970434">
     <nd ref="3793061193"/>
     <nd ref="3793061194"/>
@@ -15519,21 +15188,6 @@
     <tag k="motor_vehicle" v="yes"/>
     <tag k="service" v="driveway"/>
   </way>
-  <way id="375970946">
-    <nd ref="3793071830"/>
-    <nd ref="3793071834"/>
-    <nd ref="3793071831"/>
-    <nd ref="202555879"/>
-    <nd ref="3793071832"/>
-    <nd ref="3793071833"/>
-    <nd ref="3793071834"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
   <way id="375970979">
     <nd ref="1848408780"/>
     <nd ref="3793073336"/>
@@ -15547,183 +15201,6 @@
   <way id="376088674">
     <nd ref="3794410144"/>
     <nd ref="3794410145"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376088833">
-    <nd ref="3794414535"/>
-    <nd ref="3794414536"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376088864">
-    <nd ref="3794413798"/>
-    <nd ref="3794413799"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376088894">
-    <nd ref="3794417127"/>
-    <nd ref="3794417128"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376088898">
-    <nd ref="3794416966"/>
-    <nd ref="3794416967"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376088934">
-    <nd ref="3794411259"/>
-    <nd ref="3794411260"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="yes"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-  </way>
-  <way id="376088949">
-    <nd ref="3758953099"/>
-    <nd ref="3794411276"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376088990">
-    <nd ref="3794416983"/>
-    <nd ref="3794416984"/>
-    <nd ref="3794416985"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376089012">
-    <nd ref="3794417862"/>
-    <nd ref="3794417863"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376089041">
-    <nd ref="3794411309"/>
-    <nd ref="3794411310"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376089262">
-    <nd ref="3794422557"/>
-    <nd ref="3794422558"/>
-    <nd ref="3794422559"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376089292">
-    <nd ref="3794421556"/>
-    <nd ref="3794423457"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376089369">
-    <nd ref="3794422182"/>
-    <nd ref="3794422183"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376089402">
-    <nd ref="3794422184"/>
-    <nd ref="3794422185"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376089793">
-    <nd ref="3794428643"/>
-    <nd ref="3794428644"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376089854">
-    <nd ref="3794431157"/>
-    <nd ref="3794431158"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
-    <tag k="surface" v="asphalt"/>
-  </way>
-  <way id="376089993">
-    <nd ref="3794431742"/>
-    <nd ref="3794431743"/>
     <tag k="bicycle" v="yes"/>
     <tag k="foot" v="yes"/>
     <tag k="highway" v="service"/>
@@ -17832,16 +17309,6 @@
     <tag k="name:etymology:wikidata" v="Q8027"/>
     <tag k="sidewalk:both" v="separate"/>
     <tag k="surface" v="paving_stones"/>
-  </way>
-  <way id="604240569">
-    <nd ref="3793030316"/>
-    <nd ref="3793030317"/>
-    <tag k="bicycle" v="yes"/>
-    <tag k="foot" v="yes"/>
-    <tag k="highway" v="service"/>
-    <tag k="horse" v="no"/>
-    <tag k="motor_vehicle" v="yes"/>
-    <tag k="service" v="driveway"/>
   </way>
   <way id="615678988">
     <nd ref="5821819296"/>
@@ -37849,25 +37316,6 @@
   <node id="1847226028" lat="35.0776328" lon="-85.3012929"/>
   <node id="9076903174" lat="35.0766344" lon="-85.3003845"/>
   <node id="9076903185" lat="35.0772451" lon="-85.3007158"/>
-  <node id="202555879" lat="35.0762569" lon="-85.2828741"/>
-  <node id="3792984986" lat="35.0768103" lon="-85.2875134"/>
-  <node id="3792984987" lat="35.0769361" lon="-85.2875748"/>
-  <node id="3792987331" lat="35.0773703" lon="-85.2871354"/>
-  <node id="3792987332" lat="35.0774193" lon="-85.2871656"/>
-  <node id="3792987333" lat="35.0774007" lon="-85.2874462"/>
-  <node id="3792992257" lat="35.0775878" lon="-85.2872210"/>
-  <node id="3792992258" lat="35.0776489" lon="-85.2872408"/>
-  <node id="3792992259" lat="35.0776480" lon="-85.2874757"/>
-  <node id="3793029106" lat="35.0741259" lon="-85.2873164"/>
-  <node id="3793029107" lat="35.0741332" lon="-85.2873729"/>
-  <node id="3793029108" lat="35.0741149" lon="-85.2871555"/>
-  <node id="3793029154" lat="35.0749530" lon="-85.2862257"/>
-  <node id="3793030258" lat="35.0749785" lon="-85.2863427"/>
-  <node id="3793071830" lat="35.0763204" lon="-85.2824969"/>
-  <node id="3793071831" lat="35.0763181" lon="-85.2828056"/>
-  <node id="3793071832" lat="35.0761442" lon="-85.2827440"/>
-  <node id="3793071833" lat="35.0761719" lon="-85.2825838"/>
-  <node id="3793071834" lat="35.0763198" lon="-85.2825747"/>
   <node id="202604755" lat="35.0799571" lon="-85.3014940"/>
   <node id="202604760" lat="35.0815730" lon="-85.3002580"/>
   <node id="202604763" lat="35.0824099" lon="-85.2991181"/>
@@ -38521,31 +37969,6 @@
   <node id="12186578691" lat="35.1406205" lon="-85.3096876"/>
   <node id="12186635585" lat="35.1402329" lon="-85.3110032"/>
   <node id="12186635594" lat="35.1399266" lon="-85.3107259"/>
-  <node id="921103032" lat="35.0950995" lon="-85.2936880"/>
-  <node id="2491220400" lat="35.0963704" lon="-85.2912873"/>
-  <node id="3768932706" lat="35.0963253" lon="-85.2912514"/>
-  <node id="3768936077" lat="35.0958023" lon="-85.2920387"/>
-  <node id="3768936078" lat="35.0958364" lon="-85.2921419"/>
-  <node id="3768936079" lat="35.0958956" lon="-85.2922237"/>
-  <node id="3768936080" lat="35.0960041" lon="-85.2923192"/>
-  <node id="3768940984" lat="35.0947380" lon="-85.2931357"/>
-  <node id="3768940985" lat="35.0947808" lon="-85.2932738"/>
-  <node id="3768940986" lat="35.0948269" lon="-85.2933677"/>
-  <node id="3768940987" lat="35.0948905" lon="-85.2934482"/>
-  <node id="3768940988" lat="35.0949256" lon="-85.2935568"/>
-  <node id="3768940989" lat="35.0949087" lon="-85.2936284"/>
-  <node id="3768941087" lat="35.0953371" lon="-85.2935340"/>
-  <node id="3768941088" lat="35.0953119" lon="-85.2936064"/>
-  <node id="3768941089" lat="35.0952822" lon="-85.2937419"/>
-  <node id="3768941090" lat="35.0952663" lon="-85.2938048"/>
-  <node id="3768941091" lat="35.0953269" lon="-85.2935631"/>
-  <node id="3768941585" lat="35.0947502" lon="-85.2931750"/>
-  <node id="3768942906" lat="35.0950441" lon="-85.2937673"/>
-  <node id="3768942907" lat="35.0949585" lon="-85.2938183"/>
-  <node id="3768942908" lat="35.0948258" lon="-85.2937955"/>
-  <node id="3768942909" lat="35.0947072" lon="-85.2937580"/>
-  <node id="3768942910" lat="35.0945569" lon="-85.2937097"/>
-  <node id="3768942911" lat="35.0945029" lon="-85.2935960"/>
   <node id="3090784414" lat="35.1128987" lon="-85.2815996"/>
   <node id="3090784415" lat="35.1129795" lon="-85.2817154"/>
   <node id="6010244431" lat="35.1133102" lon="-85.2800640"/>
@@ -38759,51 +38182,10 @@
   <node id="3793020869" lat="35.1174326" lon="-85.2622734"/>
   <node id="3794410144" lat="35.1363620" lon="-85.2859317"/>
   <node id="3794410145" lat="35.1361570" lon="-85.2855590"/>
-  <node id="3794411259" lat="35.1427690" lon="-85.2821143"/>
-  <node id="3794413798" lat="35.1422495" lon="-85.2823467"/>
-  <node id="3794413799" lat="35.1423753" lon="-85.2825550"/>
-  <node id="3794414535" lat="35.1423191" lon="-85.2823156"/>
-  <node id="3794414536" lat="35.1422217" lon="-85.2820668"/>
-  <node id="3794416966" lat="35.1426495" lon="-85.2821678"/>
-  <node id="3794417127" lat="35.1425406" lon="-85.2822165"/>
-  <node id="3794417128" lat="35.1428446" lon="-85.2825764"/>
-  <node id="3758953099" lat="35.1433971" lon="-85.2817338"/>
-  <node id="3758953100" lat="35.1434247" lon="-85.2818353"/>
-  <node id="3758953101" lat="35.1433914" lon="-85.2819004"/>
-  <node id="3758953102" lat="35.1433133" lon="-85.2819329"/>
-  <node id="3758953103" lat="35.1432402" lon="-85.2818800"/>
-  <node id="3758953104" lat="35.1431729" lon="-85.2818355"/>
-  <node id="3794411260" lat="35.1426692" lon="-85.2817503"/>
-  <node id="3794411276" lat="35.1434193" lon="-85.2815035"/>
-  <node id="3794416967" lat="35.1425354" lon="-85.2818308"/>
-  <node id="202630025" lat="35.1235393" lon="-85.2707164"/>
-  <node id="1886746005" lat="35.1237688" lon="-85.2698107"/>
-  <node id="3789360721" lat="35.1237901" lon="-85.2708589"/>
-  <node id="3789360722" lat="35.1236704" lon="-85.2708037"/>
-  <node id="3789365323" lat="35.1237574" lon="-85.2699367"/>
-  <node id="3789365324" lat="35.1237642" lon="-85.2698619"/>
-  <node id="3789367152" lat="35.1236526" lon="-85.2703347"/>
-  <node id="3789367153" lat="35.1235868" lon="-85.2704675"/>
-  <node id="3789367154" lat="35.1235043" lon="-85.2706980"/>
-  <node id="3789367990" lat="35.1236395" lon="-85.2700290"/>
-  <node id="3789367991" lat="35.1236388" lon="-85.2698200"/>
   <node id="3789377394" lat="35.1238830" lon="-85.2719360"/>
   <node id="3789379124" lat="35.1238753" lon="-85.2718019"/>
-  <node id="3789379183" lat="35.1239587" lon="-85.2711112"/>
-  <node id="10765393592" lat="35.1237543" lon="-85.2699561"/>
-  <node id="3789367583" lat="35.1241489" lon="-85.2700296"/>
-  <node id="3789367584" lat="35.1241797" lon="-85.2698253"/>
-  <node id="3789369446" lat="35.1243904" lon="-85.2701573"/>
-  <node id="3789369447" lat="35.1244674" lon="-85.2699648"/>
-  <node id="3789375953" lat="35.1246730" lon="-85.2705798"/>
-  <node id="3789375954" lat="35.1247198" lon="-85.2706645"/>
-  <node id="3789377392" lat="35.1243227" lon="-85.2710493"/>
-  <node id="3789377393" lat="35.1241495" lon="-85.2708672"/>
   <node id="3789377395" lat="35.1240897" lon="-85.2718584"/>
-  <node id="3789378219" lat="35.1243909" lon="-85.2706445"/>
-  <node id="3789378220" lat="35.1245295" lon="-85.2708445"/>
   <node id="3789379123" lat="35.1240774" lon="-85.2717764"/>
-  <node id="3789379182" lat="35.1241393" lon="-85.2712768"/>
   <node id="1848408780" lat="35.1361319" lon="-85.2560333"/>
   <node id="3793073336" lat="35.1362704" lon="-85.2559611"/>
   <node id="3793061193" lat="35.1355188" lon="-85.2540402"/>
@@ -39777,24 +39159,6 @@
   <node id="12186483444" lat="35.1270090" lon="-85.2256805"/>
   <node id="12186483445" lat="35.1268101" lon="-85.2255335"/>
   <node id="12186483446" lat="35.1265920" lon="-85.2253972"/>
-  <node id="3793040841" lat="35.1408873" lon="-85.2431755"/>
-  <node id="3793040842" lat="35.1410193" lon="-85.2431552"/>
-  <node id="3793052412" lat="35.1408492" lon="-85.2429037"/>
-  <node id="3793052413" lat="35.1409831" lon="-85.2428884"/>
-  <node id="3793030048" lat="35.1397292" lon="-85.2403190"/>
-  <node id="3793030049" lat="35.1398927" lon="-85.2401572"/>
-  <node id="3793030050" lat="35.1399156" lon="-85.2401747"/>
-  <node id="3793030167" lat="35.1395790" lon="-85.2401000"/>
-  <node id="3793030168" lat="35.1397056" lon="-85.2399774"/>
-  <node id="3793030169" lat="35.1397428" lon="-85.2399365"/>
-  <node id="3793030170" lat="35.1397753" lon="-85.2399622"/>
-  <node id="3793030171" lat="35.1397934" lon="-85.2399669"/>
-  <node id="3793030314" lat="35.1407279" lon="-85.2421485"/>
-  <node id="3793030315" lat="35.1408548" lon="-85.2421253"/>
-  <node id="3793030316" lat="35.1408767" lon="-85.2422554"/>
-  <node id="3793030317" lat="35.1407523" lon="-85.2422988"/>
-  <node id="3793033110" lat="35.1394776" lon="-85.2399523"/>
-  <node id="3793033111" lat="35.1396216" lon="-85.2397999"/>
   <node id="3793034091" lat="35.1401727" lon="-85.2392153"/>
   <node id="3793034092" lat="35.1402498" lon="-85.2391228"/>
   <node id="3793034093" lat="35.1402937" lon="-85.2391415"/>
@@ -39808,10 +39172,6 @@
   <node id="3793038812" lat="35.1401457" lon="-85.2388554"/>
   <node id="3793044258" lat="35.1401537" lon="-85.2391850"/>
   <node id="3793044259" lat="35.1400398" lon="-85.2392944"/>
-  <node id="3793057229" lat="35.1408054" lon="-85.2426279"/>
-  <node id="3793057230" lat="35.1409381" lon="-85.2426041"/>
-  <node id="3793058516" lat="35.1407672" lon="-85.2423906"/>
-  <node id="3793058517" lat="35.1409096" lon="-85.2423573"/>
   <node id="1613819629" lat="35.1264144" lon="-85.2209770"/>
   <node id="6565293740" lat="35.1276829" lon="-85.2201845"/>
   <node id="12097874497" lat="35.1267872" lon="-85.2196847"/>
@@ -39916,28 +39276,6 @@
   <node id="6698307577" lat="35.1445721" lon="-85.3208864"/>
   <node id="6698307578" lat="35.1442661" lon="-85.3212310"/>
   <node id="12186635306" lat="35.1463052" lon="-85.3191939"/>
-  <node id="3794411309" lat="35.1449753" lon="-85.2807271"/>
-  <node id="3794411310" lat="35.1449896" lon="-85.2803877"/>
-  <node id="3794416983" lat="35.1449298" lon="-85.2807720"/>
-  <node id="3794416984" lat="35.1448186" lon="-85.2805567"/>
-  <node id="3794416985" lat="35.1447593" lon="-85.2805648"/>
-  <node id="3794417862" lat="35.1450653" lon="-85.2813397"/>
-  <node id="3794417863" lat="35.1452883" lon="-85.2811511"/>
-  <node id="3794421556" lat="35.1461400" lon="-85.2797897"/>
-  <node id="3794422182" lat="35.1463377" lon="-85.2796668"/>
-  <node id="3794422183" lat="35.1462749" lon="-85.2795268"/>
-  <node id="3794422184" lat="35.1465776" lon="-85.2795261"/>
-  <node id="3794422185" lat="35.1465051" lon="-85.2793685"/>
-  <node id="3794422557" lat="35.1459210" lon="-85.2799258"/>
-  <node id="3794422558" lat="35.1461762" lon="-85.2803636"/>
-  <node id="3794422559" lat="35.1462639" lon="-85.2802858"/>
-  <node id="3794423457" lat="35.1460161" lon="-85.2795080"/>
-  <node id="3794428643" lat="35.1468323" lon="-85.2793862"/>
-  <node id="3794428644" lat="35.1467749" lon="-85.2792237"/>
-  <node id="3794431157" lat="35.1479729" lon="-85.2788976"/>
-  <node id="3794431158" lat="35.1479614" lon="-85.2785612"/>
-  <node id="3794431742" lat="35.1501753" lon="-85.2790185"/>
-  <node id="3794431743" lat="35.1496764" lon="-85.2792478"/>
   <node id="3768905233" lat="35.2119550" lon="-85.2920811"/>
   <node id="3768905234" lat="35.2120947" lon="-85.2920851"/>
   <node id="3768905235" lat="35.2125604" lon="-85.2919957"/>
