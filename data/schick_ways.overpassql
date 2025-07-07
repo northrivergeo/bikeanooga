@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="Overpass API 0.7.62.7 375dc00a">
 <note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
-<meta osm_base="2025-06-10T13:03:30Z"/>
+<meta osm_base="2025-07-07T21:39:11Z"/>
 
   <way id="81307891">
     <nd ref="1523309238"/>
@@ -122,7 +122,6 @@
     <nd ref="1533083808"/>
     <nd ref="1533083801"/>
     <nd ref="1533083803"/>
-    <tag k="CHA:bicycle" v="designated"/>
     <tag k="bicycle" v="yes"/>
     <tag k="highway" v="path"/>
     <tag k="name" v="South Chickamauga Creek Greenway"/>
@@ -353,7 +352,6 @@
     <nd ref="1533083781"/>
     <nd ref="1533083784"/>
     <nd ref="1533083782"/>
-    <tag k="CHA:bicycle" v="designated"/>
     <tag k="bicycle" v="yes"/>
     <tag k="highway" v="path"/>
     <tag k="name" v="South Chickamauga Creek Greenway"/>
