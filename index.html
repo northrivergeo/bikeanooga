@@ -68,7 +68,7 @@
              var rw_geojsonLayer = L.geoJson(null, {
                  style: rwstyle,
                  onEachFeature: function(feature, layer) {
-                     layer.bindPopup(feature.properties.name); // Assuming your GeoJSON has a 'name' property
+                     layer.bindPopup(feature.properties.name); 
                }
              }).addTo(map);
 
@@ -81,7 +81,7 @@
              var sc_geojsonLayer = L.geoJson(null, {
                  style: scstyle,
                  onEachFeature: function(feature, layer) {
-                     layer.bindPopup(feature.properties.name); // Assuming your GeoJSON has a 'name' property
+                     layer.bindPopup(feature.properties.name); 
                }
              }).addTo(map);
 
@@ -94,13 +94,13 @@
              var bike_geojsonLayer = L.geoJson(null, {
                  style: bikestyle,
                  onEachFeature: function(feature, layer) {
-                     layer.bindPopup(feature.properties.name); // Assuming your GeoJSON has a 'name' property
+                     layer.bindPopup(feature.properties.name);
                }
              }).addTo(map);
 
             // Load the BikeGeoJSON file
              $.getJSON('https://northrivergeo.github.io/bikeanooga/data/bicycle_final.geojson', function(data) {
-                  rw_geojsonLayer.addData(data);
+                  bike_geojsonLayer.addData(data);
              });
 
 
