@@ -1,91 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	
-	<title>Bikeanooga</title>
-
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="ha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikeanooga</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        #map {
+            height: 900px;
+            width: 100%;
+        }
+    </style>
 </head>
-
 <body>
+    <div id="map"></div>
+    <script>
+        $(document).ready(function() {
+            // Initialize the Map
+            var map = L.map('map').setView([35.04756,-85.30398], 12); // Center the map  35.04756,-85.30398
 
-<div id="mapid" style="width: 100%; top: 0; bottom: 0; position: absolute;"></div>
+            // Add a Tile Layer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 24,
+                attribution: '© OpenStreetMap'
+            }).addTo(map);
+            
+	    //Define a BRStyle Function for GeoJSON
+            function brstyle(feature) {
+                return {
+                    fillColor: "red", // Use a property from your GeoJSON
+		    radius: 6, 	
+                    weight: 1,
+                    opacity: 1,
+                    color: 'black',
+                    fillOpacity: 0.7
+                };
+	    }
 
-<script type="text/javascript">
+            //Define a RWStyle Function for GeoJSON
+            function rwstyle(feature) {
+                return {
+                    fillColor: feature.properties.color, // Use a property from your GeoJSON
+                    weight: 4,
+                    opacity: 1,
+                    color: 'blue',
+                    dashArray: '3',
+                    fillOpacity: 0.7
+                };
+            }
+            
+	    //Define a SCStyle Function for GeoJSON
+            function scstyle(feature) {
+                return {
+                    fillColor: feature.properties.color, // Use a property from your GeoJSON
+                    weight: 4,
+                    opacity: 1,
+                    color: 'green',
+                    dashArray: '3',
+                    fillOpacity: 0.7
+                };
+            }
+	    //Define a BikeStyle Function for GeoJSON
+            function bikestyle(feature) {
+                return {
+                    fillColor: feature.properties.color, // Use a property from your GeoJSON
+                    weight: 4,
+                    opacity: 1,
+                    color: 'red',
+                    dashArray: '3',
+                    fillOpacity: 0.7
+                };
+            }
 
-	var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' + 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>', mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicmpoYWxlMTk3MSIsImEiOiJja3NodmVldXEwMmJtMnZxN2Jnb3VnYTM4In0.XIl-BKsiOMI9goW1I5A2vw';
+            // Create a BR GeoJSON layer
+             var br_geojsonLayer = L.geoJson(null, {
+                 style: brstyle,
+                 onEachFeature: function(feature, layer) {
+                     layer.bindPopup(feature.properties.name); 
+               }
+             }).addTo(map);
 
-        var osm = L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',subdomains: ['a','b','c']})
-	    grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
-            streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
-            tnmap = L.tileLayer.wms('https://tnmap.tn.gov/arcgis/services/BASEMAPS/IMAGERY/MapServer/WmsServer?', {layers: '0'});
-
-
-
-        var baseLayers = {
-		"OSM": osm, 
-                "Grayscale": grayscale,
-                "Streets": streets,
-                "State of TN Imagery": tnmap
-        }
-
-
-        var map = L.map('mapid', {
-                 center: [35.1908,-85.1380],
-                 zoom: 10,
-                 layers: [osm] });
-
-	
-     fetch('https://northrivergeo.github.io/bikeanooga/data/riverwalk_final.geojson')
-       .then(response => response.json())
-       .then(data => {
-        const riverwalklayer = L.geoJSON(data, {
-                style: function(feature) { 
-		return { 
-		    color: '#0000cd'}	
-		    weight: 4
-		}
-        }).addTo(map);
-      }); 
-     
-//	fetch('https://northrivergeo.github.io/bikeanooga/data/schick_final.geojson')
-//       .then(response => response.json())
-//       .then(data => {
-//        const schick = L.geoJSON(data, {
-//                style: function(feature) { 
-//        return { "color": '#008000'}	
-//       }
-//        }).addTo(map);
-//      }); 
-     
-     fetch('https://northrivergeo.github.io/bikeanooga/data/bicycle_final.geojson')
-       .then(response => response.json())
-       .then(data => {
-        const bikelayer = L.geoJSON(data, {
-                style: function(feature) { 
-        return {"color": '#ff7800'}	
-        }
-        }).addTo(map);
-      }); 
-	
-
-
-//      let layerControl = {
-//      "Bike Routes": datalayer,
-//          }
-
-
-//        L.control.layers(baseLayers, layerControl ).addTo( map )
+            // Load the BR GeoJSON file
+             $.getJSON('https://northrivergeo.github.io/bikeanooga/data/bike_rentals_final.geojson', function(data) {
+                  br_geojsonLayer.addData(data);
+             });
 
 
+            // Create a RW GeoJSON layer
+             var rw_geojsonLayer = L.geoJson(null, {
+                 style: rwstyle,
+                 onEachFeature: function(feature, layer) {
+                     layer.bindPopup(feature.properties.name); 
+               }
+             }).addTo(map);
 
+            // Load the RW GeoJSON file
+             $.getJSON('https://northrivergeo.github.io/bikeanooga/data/riverwalk_final.geojson', function(data) {
+                  rw_geojsonLayer.addData(data);
+             });
+
+            // Create a SC GeoJSON layer
+             var sc_geojsonLayer = L.geoJson(null, {
+                 style: scstyle,
+                 onEachFeature: function(feature, layer) {
+                     layer.bindPopup(feature.properties.name); 
+               }
+             }).addTo(map);
+
+            // Load the SC GeoJSON file
+             $.getJSON('https://northrivergeo.github.io/bikeanooga/data/schick_final.geojson', function(data) {
+                  sc_geojsonLayer.addData(data);
+             });
+            
+            // Create a BikeGeoJSON layer
+             var bike_geojsonLayer = L.geoJson(null, {
+                 style: bikestyle,
+                 onEachFeature: function(feature, layer) {
+                     layer.bindPopup(feature.properties.name);
+               }
+             }).addTo(map);
+
+            // Load the BikeGeoJSON file
+             $.getJSON('https://northrivergeo.github.io/bikeanooga/data/bicycle_final.geojson', function(data) {
+                  bike_geojsonLayer.addData(data);
+             });
+
+
+            // Layer control
+            var baseMaps = {
+                  "OpenStreetMap": L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                  maxZoom: 24,
+                  attribution: '© OpenStreetMap'
+                 })
+            };
+
+            var overlayMaps = {
+                "RiverWalk Layer": rw_geojsonLayer,
+                "South Chick Greenway": sc_geojsonLayer,
+                "Bike Rentals": br_geojsonLayer, 
+		"Bike Lanes and Routes": bike_geojsonLayer
+               };
+
+            L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+        });
     </script>
 </body>
 </html>
+
+
+
 

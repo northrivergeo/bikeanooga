@@ -30,9 +30,9 @@
 	    //Define a BRStyle Function for GeoJSON
             function brstyle(feature) {
                 return {
-                    fillColor: "blue", // Use a property from your GeoJSON
+                    fillColor: "green", // Use a property from your GeoJSON
 		    radius: 6, 	
-                    weight: 4,
+                    weight: 1,
                     opacity: 1,
                     color: 'black',
                     fillOpacity: 0.7
@@ -79,10 +79,14 @@
                  style: brstyle,
                  onEachFeature: function(feature, layer) {
                      layer.bindPopup(feature.properties.name); 
-               }
+               },
+		pointToLayer: function (feature, latlng) {
+                    return L.circleMarker(latlng, {
+	         }); 
+                } 
              }).addTo(map);
-
-            // Load the RW GeoJSON file
+            
+            // Load the BR GeoJSON file
              $.getJSON('https://northrivergeo.github.io/bikeanooga/data/bike_rentals_final.geojson', function(data) {
                   br_geojsonLayer.addData(data);
              });
