@@ -27,7 +27,7 @@
                 attribution: '© OpenStreetMap'
             }).addTo(map);
             
-	    //Define a BRStyle Function for GeoJSON
+	    ///////////////////////////Define a BRStyle Function for GeoJSON
             function brstyle(feature) {
                 return {
                     fillColor: "green", // Use a property from your GeoJSON
@@ -97,8 +97,6 @@
 	         }); 
                 } 
              }).addTo(map);
-            
-            //////////////////////////// Load the BR GeoJSON file
              $.getJSON('https://northrivergeo.github.io/bikeanooga/data/bike_rentals_final.geojson', function(data) {
                   br_geojsonLayer.addData(data);
              });

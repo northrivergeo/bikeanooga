@@ -45,5 +45,6 @@ ogr2ogr -clipsrc ../data/hamilton_county.geojson ../data/bicycle_final.geojson .
 ogr2ogr -clipsrc ../data/hamilton_county.geojson ../data/riverwalk_final.geojson ../data/riverwalk_routes.geojson
 ogr2ogr -clipsrc ../data/hamilton_county.geojson ../data/schick_final.geojson ../data/schick_routes.geojson
 ogr2ogr -clipsrc ../data/hamilton_county.geojson ../data/bicycle_tracks_final.geojson ../data/bicycle_tracks_routes.geojson
+ogr2ogr -clipsrc ../data/hamilton_county.geojson ../data/bike_rentals_final.geojson ../data/bike_rentals_points.geojson
 
 
