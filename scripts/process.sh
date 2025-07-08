@@ -31,7 +31,7 @@ wget -O ../data/bicycle_ways.overpassql --post-file=bicycle_request.overpassql "
 wget -O ../data/schick_ways.overpassql --post-file=schick_greenway_request.overpassql "https://overpass-api.de/api/interpreter"
 wget -O ../data/riverwalk_ways.overpassql --post-file=riverwalk_request.overpassql "https://overpass-api.de/api/interpreter"
 wget -O ../data/bike_rentals.overpassql --post-file=bike_rentals_request.overpassql "https://overpass-api.de/api/interpreter"
-wget -O ../data/bicycle_tracks.overpassql --post-file=bike_rentals_request.overpassql "https://overpass-api.de/api/interpreter"
+wget -O ../data/bicycle_tracks.overpassql --post-file=bicycle_tracks_request.overpassql "https://overpass-api.de/api/interpreter"
 
 #process the data 
 ogr2ogr -f "GEOJSON" --config OSM_USE_CUSTOM_INDEXING NO ../data/bicycle_routes.geojson ../data/bicycle_ways.overpassql lines 
