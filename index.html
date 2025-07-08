@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaflet Map with GeoJSON</title>
+    <title>Bikeanooga</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <style>
         #map {
-            height: 600px;
+            height: 900px;
             width: 100%;
         }
     </style>
@@ -18,14 +18,27 @@
     <div id="map"></div>
     <script>
         $(document).ready(function() {
-            // Step 2: Initialize the Map
+            // Initialize the Map
             var map = L.map('map').setView([35.04756,-85.30398], 12); // Center the map  35.04756,-85.30398
 
-            // Step 3: Add a Tile Layer
+            // Add a Tile Layer
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 24,
                 attribution: '© OpenStreetMap'
             }).addTo(map);
+            
+	    //Define a RWStyle Function for GeoJSON
+            function brstyle(feature) {
+                return {
+                    fillColor: "blue", // Use a property from your GeoJSON
+		    radius: 6, 	
+                    weight: 4,
+                    opacity: 10,
+                    color: 'back',
+                    dashArray: '3',
+                    fillOpacity: 0.7
+                };
+	    }
 
             //Define a RWStyle Function for GeoJSON
             function rwstyle(feature) {
@@ -62,6 +75,18 @@
                 };
             }
 
+            // Create a BR GeoJSON layer
+             var br_geojsonLayer = L.geoJson(null, {
+                 style: brstyle,
+                 onEachFeature: function(feature, layer) {
+                     layer.bindPopup(feature.properties.name); 
+               }
+             }).addTo(map);
+
+            // Load the RW GeoJSON file
+             $.getJSON('https://northrivergeo.github.io/bikeanooga/data/bike_rentals_final.geojson', function(data) {
+                  br_geojsonLayer.addData(data);
+             });
 
 
             // Create a RW GeoJSON layer
@@ -115,6 +140,7 @@
             var overlayMaps = {
                 "RiverWalk Layer": rw_geojsonLayer,
                 "South Chick Greenway": sc_geojsonLayer,
+                "Bike Rentals": br_geojsonLayer, 
 		"Bike Lanes and Routes": bike_geojsonLayer
                };
 
@@ -124,27 +150,6 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

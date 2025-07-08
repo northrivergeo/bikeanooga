@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <osm version="0.6" generator="Overpass API 0.7.62.7 375dc00a">
 <note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
-<meta osm_base="2025-07-07T21:39:11Z"/>
+<meta osm_base="2025-07-08T01:31:59Z"/>
 
+  <way id="81307890">
+    <nd ref="947230800"/>
+    <nd ref="947230942"/>
+    <nd ref="947231391"/>
+    <nd ref="947230667"/>
+    <nd ref="947230646"/>
+    <nd ref="947230796"/>
+    <nd ref="947231266"/>
+    <nd ref="947231385"/>
+    <nd ref="947231009"/>
+    <tag k="highway" v="path"/>
+    <tag k="name" v="South Chickamauga Creek Greenway"/>
+    <tag k="operator" v="City of Chattanooga"/>
+    <tag k="sac_scale" v="hiking"/>
+    <tag k="surface" v="paved"/>
+  </way>
   <way id="81307891">
     <nd ref="1523309238"/>
     <nd ref="1523309240"/>
@@ -102,6 +118,62 @@
     <tag k="sac_scale" v="hiking"/>
     <tag k="surface" v="paved"/>
     <tag k="wheelchair" v="yes"/>
+  </way>
+  <way id="81307901">
+    <nd ref="660829097"/>
+    <nd ref="947230748"/>
+    <nd ref="947231260"/>
+    <nd ref="947231375"/>
+    <nd ref="947230995"/>
+    <nd ref="947231138"/>
+    <nd ref="947230711"/>
+    <nd ref="947230862"/>
+    <nd ref="947231322"/>
+    <nd ref="947231447"/>
+    <nd ref="947231437"/>
+    <nd ref="947230708"/>
+    <nd ref="947231205"/>
+    <nd ref="947231306"/>
+    <nd ref="947230922"/>
+    <nd ref="947231071"/>
+    <nd ref="947231505"/>
+    <nd ref="947230791"/>
+    <nd ref="947230790"/>
+    <nd ref="947230920"/>
+    <nd ref="947230800"/>
+    <nd ref="947231373"/>
+    <nd ref="947231500"/>
+    <nd ref="947231135"/>
+    <nd ref="947231258"/>
+    <nd ref="947230846"/>
+    <nd ref="947230992"/>
+    <nd ref="947230991"/>
+    <nd ref="947231132"/>
+    <nd ref="1523309238"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="path"/>
+    <tag k="name" v="South Chickamauga Creek Greenway"/>
+    <tag k="operator" v="City of Chattanooga"/>
+    <tag k="sac_scale" v="hiking"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="81368166">
+    <nd ref="948129192"/>
+    <nd ref="948129449"/>
+    <nd ref="948129400"/>
+    <nd ref="948129413"/>
+    <nd ref="948129375"/>
+    <nd ref="948129333"/>
+    <nd ref="948129292"/>
+    <nd ref="948129309"/>
+    <nd ref="948129277"/>
+    <nd ref="1544793541"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="path"/>
+    <tag k="name" v="South Chickamauga Creek Greenway"/>
+    <tag k="operator" v="City of Chattanooga"/>
+    <tag k="sac_scale" v="hiking"/>
+    <tag k="surface" v="paved"/>
   </way>
   <way id="139900422">
     <nd ref="1533083782"/>
@@ -360,6 +432,177 @@
     <tag k="surface" v="paved"/>
     <tag k="wheelchair" v="yes"/>
   </way>
+  <way id="141124062">
+    <nd ref="1544793541"/>
+    <nd ref="948129227"/>
+    <nd ref="948129161"/>
+    <nd ref="948129188"/>
+    <tag k="access" v="yes"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="bridge" v="yes"/>
+    <tag k="highway" v="path"/>
+    <tag k="layer" v="1"/>
+    <tag k="name" v="South Chickamauga Creek Greenway"/>
+    <tag k="operator" v="City of Chattanooga"/>
+    <tag k="sac_scale" v="hiking"/>
+    <tag k="surface" v="wood"/>
+  </way>
+  <way id="697467485">
+    <nd ref="915485082"/>
+    <nd ref="6550215297"/>
+    <nd ref="6550215298"/>
+    <nd ref="6550215299"/>
+    <nd ref="6550215300"/>
+    <nd ref="6550215301"/>
+    <nd ref="6550215302"/>
+    <nd ref="6550215303"/>
+    <nd ref="6550215304"/>
+    <nd ref="6550215305"/>
+    <nd ref="6550215306"/>
+    <nd ref="6550215307"/>
+    <nd ref="6550215308"/>
+    <nd ref="6550215309"/>
+    <nd ref="6550215310"/>
+    <nd ref="6550215311"/>
+    <nd ref="6550215312"/>
+    <nd ref="6550215313"/>
+    <nd ref="6550215314"/>
+    <nd ref="6550215315"/>
+    <nd ref="6550215316"/>
+    <nd ref="6550215317"/>
+    <nd ref="6550215318"/>
+    <nd ref="6550215319"/>
+    <nd ref="6550215320"/>
+    <nd ref="6550215321"/>
+    <nd ref="6550215322"/>
+    <nd ref="6550215323"/>
+    <nd ref="6550215324"/>
+    <nd ref="6550215325"/>
+    <nd ref="6550215326"/>
+    <nd ref="6550215327"/>
+    <nd ref="6550215328"/>
+    <nd ref="6550215329"/>
+    <nd ref="6550215330"/>
+    <nd ref="6550215331"/>
+    <nd ref="6550215332"/>
+    <nd ref="6550215333"/>
+    <nd ref="6550215334"/>
+    <nd ref="6550215335"/>
+    <nd ref="6550215336"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="path"/>
+    <tag k="name" v="South Chickamauga Creek Greenway"/>
+    <tag k="operator" v="City of Chattanooga"/>
+    <tag k="sac_scale" v="hiking"/>
+    <tag k="surface" v="concrete"/>
+    <tag k="wheelchair" v="yes"/>
+  </way>
+  <way id="697467486">
+    <nd ref="6550215359"/>
+    <nd ref="6550215360"/>
+    <nd ref="6550215361"/>
+    <nd ref="6550215362"/>
+    <nd ref="6550215363"/>
+    <nd ref="6550215364"/>
+    <nd ref="6550215365"/>
+    <nd ref="6550215366"/>
+    <nd ref="6550215367"/>
+    <nd ref="6550215368"/>
+    <nd ref="6550215369"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="path"/>
+    <tag k="name" v="South Chickamauga Creek Greenway"/>
+    <tag k="operator" v="City of Chattanooga"/>
+    <tag k="sac_scale" v="hiking"/>
+    <tag k="surface" v="concrete"/>
+    <tag k="wheelchair" v="yes"/>
+  </way>
+  <way id="697467488">
+    <nd ref="6550215347"/>
+    <nd ref="6550215348"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="bridge" v="yes"/>
+    <tag k="covered" v="no"/>
+    <tag k="foot" v="yes"/>
+    <tag k="highway" v="path"/>
+    <tag k="layer" v="1"/>
+    <tag k="lit" v="no"/>
+    <tag k="name" v="South Chickamauga Creek Greenway"/>
+    <tag k="oneway" v="no"/>
+    <tag k="operator" v="City of Chattanooga"/>
+    <tag k="sac_scale" v="hiking"/>
+    <tag k="surface" v="wood"/>
+    <tag k="wheelchair" v="yes"/>
+  </way>
+  <way id="697467489">
+    <nd ref="6550215348"/>
+    <nd ref="6550215349"/>
+    <nd ref="6550215350"/>
+    <nd ref="6550215351"/>
+    <nd ref="6550215352"/>
+    <nd ref="6550215353"/>
+    <nd ref="6550215354"/>
+    <nd ref="6550215355"/>
+    <nd ref="6550215356"/>
+    <nd ref="6550215357"/>
+    <nd ref="6550215358"/>
+    <nd ref="6550215359"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="path"/>
+    <tag k="name" v="South Chickamauga Creek Greenway"/>
+    <tag k="operator" v="City of Chattanooga"/>
+    <tag k="sac_scale" v="hiking"/>
+    <tag k="surface" v="wood"/>
+    <tag k="wheelchair" v="yes"/>
+  </way>
+  <way id="697467490">
+    <nd ref="6550215369"/>
+    <nd ref="6550215370"/>
+    <nd ref="6550215371"/>
+    <nd ref="6550215372"/>
+    <nd ref="6550215373"/>
+    <nd ref="6550215374"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="path"/>
+    <tag k="name" v="South Chickamauga Creek Greenway"/>
+    <tag k="operator" v="City of Chattanooga"/>
+    <tag k="sac_scale" v="hiking"/>
+    <tag k="surface" v="wood"/>
+    <tag k="wheelchair" v="yes"/>
+  </way>
+  <way id="697467492">
+    <nd ref="6550215375"/>
+    <nd ref="6550215376"/>
+    <nd ref="6550215377"/>
+    <nd ref="6550215378"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="path"/>
+    <tag k="name" v="South Chickamauga Creek Greenway"/>
+    <tag k="operator" v="City of Chattanooga"/>
+    <tag k="sac_scale" v="hiking"/>
+    <tag k="surface" v="wood"/>
+    <tag k="wheelchair" v="yes"/>
+  </way>
+  <way id="697467493">
+    <nd ref="6550215337"/>
+    <nd ref="6550215338"/>
+    <nd ref="6550215339"/>
+    <nd ref="6550215340"/>
+    <nd ref="6550215341"/>
+    <nd ref="6550215342"/>
+    <nd ref="6550215343"/>
+    <nd ref="6550215344"/>
+    <nd ref="6550215345"/>
+    <nd ref="6550215346"/>
+    <nd ref="6550215347"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="path"/>
+    <tag k="name" v="South Chickamauga Creek Greenway"/>
+    <tag k="operator" v="City of Chattanooga"/>
+    <tag k="sac_scale" v="hiking"/>
+    <tag k="surface" v="wood"/>
+    <tag k="wheelchair" v="yes"/>
+  </way>
   <way id="697469610">
     <nd ref="6550270183"/>
     <nd ref="1533083123"/>
@@ -578,16 +821,82 @@
     <tag k="surface" v="paved"/>
     <tag k="wheelchair" v="yes"/>
   </way>
+  <way id="1368211231">
+    <nd ref="947231375"/>
+    <nd ref="948129269"/>
+    <nd ref="948129307"/>
+    <nd ref="948129275"/>
+    <nd ref="948129225"/>
+    <nd ref="948129157"/>
+    <nd ref="948129186"/>
+    <nd ref="948129444"/>
+    <nd ref="948129192"/>
+    <tag k="bicycle" v="yes"/>
+    <tag k="highway" v="path"/>
+    <tag k="name" v="South Chickamauga Creek Greenway"/>
+    <tag k="operator" v="City of Chattanooga"/>
+    <tag k="sac_scale" v="hiking"/>
+    <tag k="surface" v="paved"/>
+  </way>
+  <node id="948129161" lat="35.0042113" lon="-85.1996220"/>
+  <node id="948129188" lat="35.0039981" lon="-85.1997152"/>
+  <node id="948129227" lat="35.0043514" lon="-85.2001439"/>
+  <node id="948129277" lat="35.0048546" lon="-85.1999706"/>
+  <node id="948129292" lat="35.0050962" lon="-85.2001880"/>
+  <node id="948129309" lat="35.0049351" lon="-85.1999988"/>
+  <node id="948129333" lat="35.0052492" lon="-85.2006188"/>
+  <node id="948129375" lat="35.0052451" lon="-85.2008120"/>
+  <node id="948129400" lat="35.0056155" lon="-85.2011582"/>
+  <node id="948129413" lat="35.0052854" lon="-85.2009127"/>
+  <node id="1544793541" lat="35.0047392" lon="-85.2000033"/>
+  <node id="660829097" lat="35.0070448" lon="-85.2063948"/>
+  <node id="947230708" lat="35.0118987" lon="-85.2039988"/>
+  <node id="947230711" lat="35.0111519" lon="-85.2033957"/>
+  <node id="947230748" lat="35.0070160" lon="-85.2062477"/>
+  <node id="947230862" lat="35.0114104" lon="-85.2034761"/>
+  <node id="947231205" lat="35.0120222" lon="-85.2046192"/>
+  <node id="947231260" lat="35.0074899" lon="-85.2043722"/>
+  <node id="947231306" lat="35.0124271" lon="-85.2067216"/>
+  <node id="947231322" lat="35.0116172" lon="-85.2036226"/>
+  <node id="947231437" lat="35.0118412" lon="-85.2038725"/>
+  <node id="947231447" lat="35.0117407" lon="-85.2037432"/>
+  <node id="947230995" lat="35.0092735" lon="-85.2031228"/>
+  <node id="947231138" lat="35.0106636" lon="-85.2033325"/>
+  <node id="947231375" lat="35.0079179" lon="-85.2029218"/>
+  <node id="948129157" lat="35.0073657" lon="-85.2020581"/>
+  <node id="948129186" lat="35.0071757" lon="-85.2020291"/>
+  <node id="948129192" lat="35.0069819" lon="-85.2020901"/>
+  <node id="948129225" lat="35.0078424" lon="-85.2022288"/>
+  <node id="948129269" lat="35.0080163" lon="-85.2025444"/>
+  <node id="948129275" lat="35.0079648" lon="-85.2023157"/>
+  <node id="948129307" lat="35.0080163" lon="-85.2024317"/>
+  <node id="948129444" lat="35.0070275" lon="-85.2020516"/>
+  <node id="948129449" lat="35.0062919" lon="-85.2016293"/>
+  <node id="947230646" lat="35.0145029" lon="-85.2107117"/>
+  <node id="947230667" lat="35.0143127" lon="-85.2104855"/>
   <node id="947230704" lat="35.0166750" lon="-85.2123775"/>
   <node id="947230721" lat="35.0144778" lon="-85.2109845"/>
   <node id="947230767" lat="35.0142875" lon="-85.2108912"/>
+  <node id="947230796" lat="35.0147650" lon="-85.2109127"/>
+  <node id="947230800" lat="35.0136925" lon="-85.2100647"/>
   <node id="947230844" lat="35.0153969" lon="-85.2117780"/>
+  <node id="947230846" lat="35.0137339" lon="-85.2107311"/>
   <node id="947230873" lat="35.0147543" lon="-85.2112000"/>
   <node id="947230989" lat="35.0156913" lon="-85.2120365"/>
+  <node id="947230991" lat="35.0138431" lon="-85.2108517"/>
+  <node id="947230992" lat="35.0137885" lon="-85.2108115"/>
   <node id="947231009" lat="35.0148727" lon="-85.2112969"/>
+  <node id="947231132" lat="35.0138890" lon="-85.2108661"/>
+  <node id="947231135" lat="35.0139407" lon="-85.2104755"/>
   <node id="947231187" lat="35.0180080" lon="-85.2127448"/>
+  <node id="947231258" lat="35.0139005" lon="-85.2105645"/>
+  <node id="947231266" lat="35.0149876" lon="-85.2111461"/>
   <node id="947231303" lat="35.0187396" lon="-85.2129434"/>
+  <node id="947231373" lat="35.0137828" lon="-85.2101796"/>
+  <node id="947231385" lat="35.0149876" lon="-85.2112000"/>
+  <node id="947231391" lat="35.0142945" lon="-85.2104417"/>
   <node id="947231432" lat="35.0159354" lon="-85.2121657"/>
+  <node id="947231500" lat="35.0139178" lon="-85.2103950"/>
   <node id="1523309238" lat="35.0139464" lon="-85.2110135"/>
   <node id="1523309240" lat="35.0140309" lon="-85.2111615"/>
   <node id="947230762" lat="35.0215241" lon="-85.2136534"/>
@@ -600,6 +909,13 @@
   <node id="947231368" lat="35.0226650" lon="-85.2136402"/>
   <node id="947231497" lat="35.0233194" lon="-85.2136345"/>
   <node id="1798920468" lat="35.0249302" lon="-85.2136250"/>
+  <node id="947230790" lat="35.0131107" lon="-85.2093381"/>
+  <node id="947230791" lat="35.0129843" lon="-85.2091055"/>
+  <node id="947230920" lat="35.0134151" lon="-85.2097115"/>
+  <node id="947230922" lat="35.0127201" lon="-85.2082496"/>
+  <node id="947230942" lat="35.0138388" lon="-85.2099003"/>
+  <node id="947231071" lat="35.0128062" lon="-85.2086172"/>
+  <node id="947231505" lat="35.0128694" lon="-85.2088211"/>
   <node id="947230682" lat="35.0322088" lon="-85.2135496"/>
   <node id="947230966" lat="35.0297554" lon="-85.2135798"/>
   <node id="947231114" lat="35.0310604" lon="-85.2135723"/>
@@ -614,6 +930,87 @@
   <node id="947231300" lat="35.0325539" lon="-85.2135214"/>
   <node id="947231419" lat="35.0334289" lon="-85.2131725"/>
   <node id="947231427" lat="35.0327764" lon="-85.2134478"/>
+  <node id="915485082" lat="35.0886367" lon="-85.2604551"/>
+  <node id="6550215297" lat="35.0885372" lon="-85.2603068"/>
+  <node id="6550215298" lat="35.0884527" lon="-85.2600533"/>
+  <node id="6550215299" lat="35.0884241" lon="-85.2598334"/>
+  <node id="6550215300" lat="35.0884077" lon="-85.2596698"/>
+  <node id="6550215301" lat="35.0884077" lon="-85.2595545"/>
+  <node id="6550215302" lat="35.0884198" lon="-85.2594807"/>
+  <node id="6550215303" lat="35.0884494" lon="-85.2594498"/>
+  <node id="6550215304" lat="35.0884900" lon="-85.2594203"/>
+  <node id="6550215305" lat="35.0886294" lon="-85.2593801"/>
+  <node id="6550215306" lat="35.0887654" lon="-85.2593291"/>
+  <node id="6550215307" lat="35.0889399" lon="-85.2592393"/>
+  <node id="6550215308" lat="35.0890123" lon="-85.2591843"/>
+  <node id="6550215309" lat="35.0890507" lon="-85.2591092"/>
+  <node id="6550215310" lat="35.0890507" lon="-85.2590073"/>
+  <node id="6550215311" lat="35.0890365" lon="-85.2588839"/>
+  <node id="6550215312" lat="35.0890058" lon="-85.2588142"/>
+  <node id="6550215313" lat="35.0889849" lon="-85.2587699"/>
+  <node id="6550215314" lat="35.0889256" lon="-85.2587176"/>
+  <node id="6550215315" lat="35.0888927" lon="-85.2586573"/>
+  <node id="6550215316" lat="35.0888532" lon="-85.2585312"/>
+  <node id="6550215317" lat="35.0888324" lon="-85.2584883"/>
+  <node id="6550215318" lat="35.0887512" lon="-85.2584051"/>
+  <node id="6550215319" lat="35.0886897" lon="-85.2583300"/>
+  <node id="6550215320" lat="35.0886711" lon="-85.2582791"/>
+  <node id="6550215321" lat="35.0886689" lon="-85.2582053"/>
+  <node id="6550215322" lat="35.0886853" lon="-85.2581034"/>
+  <node id="6550215323" lat="35.0887369" lon="-85.2580041"/>
+  <node id="6550215324" lat="35.0888653" lon="-85.2578432"/>
+  <node id="6550215325" lat="35.0889827" lon="-85.2577051"/>
+  <node id="6550215326" lat="35.0890760" lon="-85.2575549"/>
+  <node id="6550215327" lat="35.0892592" lon="-85.2572283"/>
+  <node id="6550215328" lat="35.0893410" lon="-85.2570915"/>
+  <node id="6550215329" lat="35.0893651" lon="-85.2570687"/>
+  <node id="6550215330" lat="35.0894099" lon="-85.2570466"/>
+  <node id="6550215331" lat="35.0894856" lon="-85.2569997"/>
+  <node id="6550215332" lat="35.0895240" lon="-85.2569473"/>
+  <node id="6550215333" lat="35.0895854" lon="-85.2568320"/>
+  <node id="6550215334" lat="35.0896897" lon="-85.2566161"/>
+  <node id="6550215335" lat="35.0898280" lon="-85.2562433"/>
+  <node id="6550215336" lat="35.0899048" lon="-85.2559724"/>
+  <node id="6550215337" lat="35.0899059" lon="-85.2557967"/>
+  <node id="6550215338" lat="35.0899256" lon="-85.2556116"/>
+  <node id="6550215339" lat="35.0899487" lon="-85.2554467"/>
+  <node id="6550215340" lat="35.0899662" lon="-85.2552656"/>
+  <node id="6550215341" lat="35.0899926" lon="-85.2551033"/>
+  <node id="6550215342" lat="35.0899915" lon="-85.2550175"/>
+  <node id="6550215343" lat="35.0899201" lon="-85.2548901"/>
+  <node id="6550215344" lat="35.0898225" lon="-85.2547385"/>
+  <node id="6550215345" lat="35.0897884" lon="-85.2546554"/>
+  <node id="6550215346" lat="35.0897676" lon="-85.2545642"/>
+  <node id="6550215347" lat="35.0897270" lon="-85.2545307"/>
+  <node id="6550215348" lat="35.0891300" lon="-85.2542611"/>
+  <node id="6550215349" lat="35.0891004" lon="-85.2542262"/>
+  <node id="6550215350" lat="35.0890916" lon="-85.2541780"/>
+  <node id="6550215351" lat="35.0891015" lon="-85.2541109"/>
+  <node id="6550215352" lat="35.0891871" lon="-85.2539084"/>
+  <node id="6550215353" lat="35.0892189" lon="-85.2538199"/>
+  <node id="6550215354" lat="35.0892189" lon="-85.2537676"/>
+  <node id="6550215355" lat="35.0892540" lon="-85.2536818"/>
+  <node id="6550215356" lat="35.0892990" lon="-85.2535369"/>
+  <node id="6550215357" lat="35.0893144" lon="-85.2534216"/>
+  <node id="6550215358" lat="35.0893572" lon="-85.2533250"/>
+  <node id="6550215359" lat="35.0894110" lon="-85.2532231"/>
+  <node id="6550215360" lat="35.0894219" lon="-85.2531641"/>
+  <node id="6550215361" lat="35.0894164" lon="-85.2530702"/>
+  <node id="6550215362" lat="35.0894208" lon="-85.2529777"/>
+  <node id="6550215363" lat="35.0894362" lon="-85.2528194"/>
+  <node id="6550215364" lat="35.0894724" lon="-85.2526759"/>
+  <node id="6550215365" lat="35.0894987" lon="-85.2524895"/>
+  <node id="6550215366" lat="35.0895350" lon="-85.2523608"/>
+  <node id="6550215367" lat="35.0896499" lon="-85.2520899"/>
+  <node id="6550215368" lat="35.0897092" lon="-85.2518753"/>
+  <node id="6550215369" lat="35.0897553" lon="-85.2516205"/>
+  <node id="6550215370" lat="35.0897860" lon="-85.2513925"/>
+  <node id="6550215371" lat="35.0898694" lon="-85.2507783"/>
+  <node id="6550215372" lat="35.0899221" lon="-85.2504162"/>
+  <node id="6550215373" lat="35.0899659" lon="-85.2501587"/>
+  <node id="6550215374" lat="35.0899989" lon="-85.2499790"/>
+  <node id="6550215375" lat="35.0899594" lon="-85.2497403"/>
+  <node id="6550215376" lat="35.0898847" lon="-85.2493889"/>
   <node id="947230743" lat="35.0430971" lon="-85.2187562"/>
   <node id="947230878" lat="35.0433008" lon="-85.2186449"/>
   <node id="947231029" lat="35.0432404" lon="-85.2187072"/>
@@ -791,6 +1188,8 @@
   <node id="1533083817" lat="35.0894032" lon="-85.2446392"/>
   <node id="1533083818" lat="35.0894134" lon="-85.2452699"/>
   <node id="1533083820" lat="35.0894219" lon="-85.2450466"/>
+  <node id="6550215377" lat="35.0898233" lon="-85.2491555"/>
+  <node id="6550215378" lat="35.0897571" lon="-85.2491427"/>
   <node id="1533083669" lat="35.0847785" lon="-85.2379607"/>
   <node id="1533083670" lat="35.0848149" lon="-85.2382379"/>
   <node id="1533083671" lat="35.0848530" lon="-85.2394580"/>
