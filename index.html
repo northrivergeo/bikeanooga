@@ -42,9 +42,10 @@
 	    //Define a TrackStyle Function for GeoJSON
             function trackstyle(feature) {
                 return {
-                    weight: 1,
+                    weight: 4,
                     opacity: 1,
                     color: 'red',
+                    dashArray: '3',
                     fillOpacity: 0.7
                 };
 	    }
@@ -62,7 +63,7 @@
                 };
             }
             
-	    //Define a SCStyle Function for GeoJSON
+	    /////////////////////////Define a SCStyle Function for GeoJSON
             function scstyle(feature) {
                 return {
                     fillColor: feature.properties.color, // Use a property from your GeoJSON
@@ -73,7 +74,7 @@
                     fillOpacity: 0.7
                 };
             }
-	    //Define a BikeStyle Function for GeoJSON
+	    /////////////////////////Define a BikeStyle Function for GeoJSON
             function bikestyle(feature) {
                 return {
                     fillColor: feature.properties.color, // Use a property from your GeoJSON
@@ -85,7 +86,7 @@
                 };
             }
 
-            // Create a BR GeoJSON layer
+            //////////////////////////// Create a BR GeoJSON layer
              var br_geojsonLayer = L.geoJson(null, {
                  style: brstyle,
                  onEachFeature: function(feature, layer) {
@@ -97,67 +98,59 @@
                 } 
              }).addTo(map);
             
-            // Load the BR GeoJSON file
+            //////////////////////////// Load the BR GeoJSON file
              $.getJSON('https://northrivergeo.github.io/bikeanooga/data/bike_rentals_final.geojson', function(data) {
                   br_geojsonLayer.addData(data);
              });
 
 
-            // Create a RW GeoJSON layer
+            //////////////////////////// Create a RW GeoJSON layer
              var rw_geojsonLayer = L.geoJson(null, {
                  style: rwstyle,
                  onEachFeature: function(feature, layer) {
                      layer.bindPopup(feature.properties.name); 
                }
              }).addTo(map);
-
-            // Load the RW GeoJSON file
              $.getJSON('https://northrivergeo.github.io/bikeanooga/data/riverwalk_final.geojson', function(data) {
                   rw_geojsonLayer.addData(data);
              });
 
-            // Create a SC GeoJSON layer
+            //////////////////////////// Create a SC GeoJSON layer
              var sc_geojsonLayer = L.geoJson(null, {
                  style: scstyle,
                  onEachFeature: function(feature, layer) {
                      layer.bindPopup(feature.properties.name); 
                }
              }).addTo(map);
-
-            // Load the SC GeoJSON file
              $.getJSON('https://northrivergeo.github.io/bikeanooga/data/schick_final.geojson', function(data) {
                   sc_geojsonLayer.addData(data);
              });
             
-            // Create a BikeGeoJSON layer
+            ///////////////////////////// Create a BikeGeoJSON layer
              var bike_geojsonLayer = L.geoJson(null, {
                  style: bikestyle,
                  onEachFeature: function(feature, layer) {
                      layer.bindPopup(feature.properties.name);
                }
              }).addTo(map);
-
-            // Load the BikeGeoJSON file
              $.getJSON('https://northrivergeo.github.io/bikeanooga/data/bicycle_final.geojson', function(data) {
                   bike_geojsonLayer.addData(data);
              });
             
-            // Create a BikeGeoJSON layer
+            ////////////////////////////// Create a Track layer
              var track_geojsonLayer = L.geoJson(null, {
                  style: trackstyle,
                  onEachFeature: function(feature, layer) {
                      layer.bindPopup(feature.properties.name);
                }
              }).addTo(map);
-
-            // Load the BikeGeoJSON file
              $.getJSON('https://northrivergeo.github.io/bikeanooga/data/bicycle_tracks_final.geojson', function(data) {
-                  bike_geojsonLayer.addData(data);
+                  track_geojsonLayer.addData(data);
              });
 
 
 
-            // Layer control
+            ////////////////////////////// Layer control
             var baseMaps = {
                   "OpenStreetMap": L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                   maxZoom: 24,
@@ -168,7 +161,7 @@
             var overlayMaps = {
                 "RiverWalk Layer": rw_geojsonLayer,
                 "South Chick Greenway": sc_geojsonLayer,
-		"Separated Lanes": trackgeojsonLayer,  
+		"Separated Lanes": track_geojsonLayer,  
                 "Bike Rentals": br_geojsonLayer, 
 		"Bike Lanes and Routes": bike_geojsonLayer
                };
