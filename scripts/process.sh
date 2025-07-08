@@ -31,7 +31,7 @@ wget -O ../data/bike_rentals.overpassql --post-file=bike_rentals_request.overpas
 ogr2ogr -f "GEOJSON" --config OSM_USE_CUSTOM_INDEXING NO ../data/bicycle_routes.geojson ../data/bicycle_ways.overpassql lines 
 ogr2ogr -f "GEOJSON" --config OSM_USE_CUSTOM_INDEXING NO ../data/schick_routes.geojson ../data/schick_ways.overpassql lines 
 ogr2ogr -f "GEOJSON" --config OSM_USE_CUSTOM_INDEXING NO ../data/riverwalk_routes.geojson ../data/riverwalk_ways.overpassql lines 
-ogr2ogr -f "GEOJSON" --config OSM_USE_CUSTOM_INDEXING NO ../data/bike_rentals_points.geojson ../data/bike_rentals.overpassql lines 
+ogr2ogr -f "GEOJSON" --config OSM_USE_CUSTOM_INDEXING NO ../data/bike_rentals_points.geojson ../data/bike_rentals.overpassql points 
 
 #clip it at the county line
 ogr2ogr -clipsrc ../data/hamilton_county.geojson ../data/bicycle_final.geojson ../data/bicycle_routes.geojson
