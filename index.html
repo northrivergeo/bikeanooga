@@ -27,15 +27,14 @@
                 attribution: '© OpenStreetMap'
             }).addTo(map);
             
-	    //Define a RWStyle Function for GeoJSON
+	    //Define a BRStyle Function for GeoJSON
             function brstyle(feature) {
                 return {
                     fillColor: "blue", // Use a property from your GeoJSON
 		    radius: 6, 	
                     weight: 4,
-                    opacity: 10,
-                    color: 'back',
-                    dashArray: '3',
+                    opacity: 1,
+                    color: 'black',
                     fillOpacity: 0.7
                 };
 	    }
