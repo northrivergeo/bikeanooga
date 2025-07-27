@@ -124,14 +124,14 @@
                   sc_geojsonLayer.addData(data);
              });
             
-            ///////////////////////////// Create a BikeGeoJSON layer
-             var bike_geojsonLayer = L.geoJson(null, {
+            ///////////////////////////// Create a Shared_lane layer
+             var shared_geojsonLayer = L.geoJson(null, {
                  style: bikestyle,
                  onEachFeature: function(feature, layer) {
                      layer.bindPopup(feature.properties.name);
                }
              }).addTo(map);
-             $.getJSON('https://northrivergeo.github.io/bikeanooga/data/bicycle_final.geojson', function(data) {
+             $.getJSON('https://northrivergeo.github.io/bikeanooga/data/shared_lane_final.geojson', function(data) {
                   bike_geojsonLayer.addData(data);
              });
             
@@ -161,7 +161,7 @@
                 "South Chick Greenway": sc_geojsonLayer,
 		"Separated Lanes": track_geojsonLayer,  
                 "Bike Rentals": br_geojsonLayer, 
-		"Bike Lanes and Routes": bike_geojsonLayer
+		"Shared Lanes": shared_geojsonLayer
                };
 
             L.control.layers(baseMaps, overlayMaps).addTo(map);
