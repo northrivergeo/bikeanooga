@@ -6,14 +6,14 @@
 [ -f ../data/bicycle_ways.gpkg ] && rm ../data/bicycle_ways.gpkg
 [ -f ../data/riverwalk_ways.gpkg ] && rm ../data/riverwalk_ways.gpkg
 [ -f ../data/schick_ways.gpkg ] && rm ../data/schick_ways.gpkg
-[ -f ../data/bike_rentals.gpkg ] && rm ../data/bike_rentals.gpkg
+[ -f ../data/bike_rental.gpkg ] && rm ../data/bike_rental.gpkg
 [ -f ../data/bicycle_tracks.gpkg ] && rm ../data/bicycle_tracks.gpkg
 [ -f ../data/shared_lanes.gpkg ] && rm ../data/shared_lanes.gpkg
 
 [ -f ../data/bicycle_ways_final.geojson ] && rm ../data/bicycle_ways_final.geojson
 [ -f ../data/riverwalk_ways_final.geojson ] && rm ../data/riverwalk_ways_final.geojson
 [ -f ../data/schick_ways_final.geojson ] && rm ../data/schick_ways_final.geojson
-[ -f ../data/bike_rentals_final.geojson ] && rm ../data/bike_rentals_final.geojson
+[ -f ../data/bike_rental_final.geojson ] && rm ../data/bike_rental_final.geojson
 [ -f ../data/shared_lanes_final.geojson ] && rm ../data/shared_lanes_final.geojson
 
 
