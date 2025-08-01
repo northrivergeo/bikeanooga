@@ -39,7 +39,7 @@
                 };
 	    }
 	    
-	    //Define a TrackStyle Function for GeoJSON
+	    /////////////////////////Define a TrackStyle Function for GeoJSON
             function trackstyle(feature) {
                 return {
                     weight: 4,
@@ -51,7 +51,7 @@
 	    }
 
 
-            //Define a RWStyle Function for GeoJSON
+            //////////////////////////Define a RWStyle Function for GeoJSON
             function rwstyle(feature) {
                 return {
                     fillColor: feature.properties.color, // Use a property from your GeoJSON
@@ -85,6 +85,51 @@
                     fillOpacity: 0.7
                 };
             }
+	    /////////////////////////Define a Bike Friendly Function for GeoJSON
+            function bikefriendlystyle(feature) {
+                return {
+                    fillColor: feature.properties.color, // Use a property from your GeoJSON
+                    weight: 4,
+                    opacity: 1,
+                    color: '#ca00fb',
+                    dashArray: '3',
+                    fillOpacity: 0.7
+                };
+            }
+	    /////////////////////////Define a Bike Sep Function for GeoJSON
+            function bikesepstyle(feature) {
+                return {
+                    fillColor: feature.properties.color, // Use a property from your GeoJSON
+                    weight: 4,
+                    opacity: 1,
+                    color: '#0af4d8',
+                    dashArray: '3',
+                    fillOpacity: 0.7
+                };
+            }
+            
+	     //////////////////////////// Create a Bike Friendly GeoJSON layer
+             var friendly_geojsonLayer = L.geoJson(null, {
+                 style: bikefriendlystyle,
+                 onEachFeature: function(feature, layer) {
+                     layer.bindPopup(feature.properties.name); 
+               }
+             }).addTo(map);
+             $.getJSON('https://northrivergeo.github.io/bikeanooga/data/bike_road_final.geojson', function(data) {
+                  friendly_geojsonLayer.addData(data);
+             });
+
+            //////////////////////////// Create a Bike Separated GeoJSON layer
+             var sep_geojsonLayer = L.geoJson(null, {
+                 style: bikesepstyle,
+                 onEachFeature: function(feature, layer) {
+                     layer.bindPopup(feature.properties.name); 
+               }
+             }).addTo(map);
+             $.getJSON('https://northrivergeo.github.io/bikeanooga/data/sep_lane_final.geojson', function(data) {
+                  sep_geojsonLayer.addData(data);
+             });
+
 
             //////////////////////////// Create a BR GeoJSON layer
              var br_geojsonLayer = L.geoJson(null, {
@@ -146,6 +191,16 @@
                   track_geojsonLayer.addData(data);
              });
 
+	    /////////////////////////////// Create a Lane Layer
+             var lane_geojsonLayer = L.geoJson(null, {
+                 style: trackstyle,
+                 onEachFeature: function(feature, layer) {
+                     layer.bindPopup(feature.properties.name);
+               }
+             }).addTo(map);
+             $.getJSON('https://northrivergeo.github.io/bikeanooga/data/sep_lane_final.geojson', function(data) {
+                  track_geojsonLayer.addData(data);
+             });
 
 
             ////////////////////////////// Layer control
@@ -162,6 +217,8 @@
 		"Separated Lanes": track_geojsonLayer,  
                 "Bike Rentals": br_geojsonLayer, 
 		"Shared Lanes": shared_geojsonLayer
+		"Painted Separate Lanes" : sep_geojsonLayer
+		"Bike Friendly Streets" : friendly_geojsonLayer
                };
 
             L.control.layers(baseMaps, overlayMaps).addTo(map);

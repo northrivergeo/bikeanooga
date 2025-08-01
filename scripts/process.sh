@@ -8,13 +8,17 @@
 [ -f ../data/schick_ways.gpkg ] && rm ../data/schick_ways.gpkg
 [ -f ../data/bike_rental.gpkg ] && rm ../data/bike_rental.gpkg
 [ -f ../data/bicycle_tracks.gpkg ] && rm ../data/bicycle_tracks.gpkg
-[ -f ../data/shared_lanes.gpkg ] && rm ../data/shared_lanes.gpkg
+[ -f ../data/shared_lane.gpkg ] && rm ../data/shared_lane.gpkg
+[ -f ../data/sep_lane.gpkg ] && rm ../data/sep_lane.gpkg
+[ -f ../data/bicycle_road.gpkg ] && rm ../data/bicycle_road.gpkg
 
 [ -f ../data/bicycle_ways_final.geojson ] && rm ../data/bicycle_ways_final.geojson
 [ -f ../data/riverwalk_ways_final.geojson ] && rm ../data/riverwalk_ways_final.geojson
 [ -f ../data/schick_ways_final.geojson ] && rm ../data/schick_ways_final.geojson
 [ -f ../data/bike_rental_final.geojson ] && rm ../data/bike_rental_final.geojson
-[ -f ../data/shared_lanes_final.geojson ] && rm ../data/shared_lanes_final.geojson
+[ -f ../data/shared_lane_final.geojson ] && rm ../data/shared_lane_final.geojson
+[ -f ../data/sep_lane_final.geojson ] && rm ../data/sep_lane_final.geojson
+[ -f ../data/bicycle_road_final.geojson ] && rm ../data/bicycle_road_final.geojson
 
 
 #grab the data 
@@ -28,10 +32,16 @@ qgis_process run quickosm:downloadosmdataextentquery --distance_units=meters --a
 
 qgis_process run quickosm:downloadosmdataextentquery --distance_units=meters --area_units=m2 --ellipsoid=EPSG:7030 --KEY='cycleway' --VALUE=shared_lane --TYPE_MULTI_REQUEST= --EXTENT='-85.499100000,-84.927700000,34.978800000,35.474700000 [EPSG:4326]' --TIMEOUT=25 --SERVER='https://overpass-api.de/api/interpreter' --FILE=/data/local_projects/bikeanooga/data/shared_lane.gpkg
 
+qgis_process run quickosm:downloadosmdataextentquery --distance_units=meters --area_units=m2 --ellipsoid=EPSG:7030 --KEY='cycleway' --VALUE=lane --TYPE_MULTI_REQUEST= --EXTENT='-85.499100000,-84.927700000,34.978800000,35.474700000 [EPSG:4326]' --TIMEOUT=25 --SERVER='https://overpass-api.de/api/interpreter' --FILE=/data/local_projects/bikeanooga/data/sep_lane.gpkg
+
+qgis_process run quickosm:downloadosmdataextentquery --distance_units=meters --area_units=m2 --ellipsoid=EPSG:7030 --KEY='bicycle_road' --VALUE=yes --TYPE_MULTI_REQUEST= --EXTENT='-85.499100000,-84.927700000,34.978800000,35.474700000 [EPSG:4326]' --TIMEOUT=25 --SERVER='https://overpass-api.de/api/interpreter' --FILE=/data/local_projects/bikeanooga/data/bicycle_road.gpkg
+
 #process the data 
 ogr2ogr -f "GeoJSON" -clipsrc ../data/hamilton_county.geojson /data/local_projects/bikeanooga/data/bike_rental_final.geojson /data/local_projects/bikeanooga/data/bike_rental.gpkg bike_rental_points
 ogr2ogr -f "GeoJSON" -clipsrc ../data/hamilton_county.geojson /data/local_projects/bikeanooga/data/schick_final.geojson /data/local_projects/bikeanooga/data/schick_greenway.gpkg schick_greenway_lines
 ogr2ogr -f "GeoJSON" -clipsrc ../data/hamilton_county.geojson /data/local_projects/bikeanooga/data/riverwalk_final.geojson /data/local_projects/bikeanooga/data/riverwalk.gpkg riverwalk_lines
 ogr2ogr -f "GeoJSON" -clipsrc ../data/hamilton_county.geojson /data/local_projects/bikeanooga/data/bicycle_tracks_final.geojson /data/local_projects/bikeanooga/data/bicycle_tracks.gpkg bicycle_tracks_lines
 ogr2ogr -f "GeoJSON" -clipsrc ../data/hamilton_county.geojson /data/local_projects/bikeanooga/data/shared_lane_final.geojson /data/local_projects/bikeanooga/data/shared_lane.gpkg shared_lane_lines
+ogr2ogr -f "GeoJSON" -clipsrc ../data/hamilton_county.geojson /data/local_projects/bikeanooga/data/sep_lane_final.geojson /data/local_projects/bikeanooga/data/sep_lane.gpkg sep_lane_lines
+ogr2ogr -f "GeoJSON" -clipsrc ../data/hamilton_county.geojson /data/local_projects/bikeanooga/data/bicycle_road_final.geojson /data/local_projects/bikeanooga/data/bicycle_road.gpkg bicycle_road_lines
 
