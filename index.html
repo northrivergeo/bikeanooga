@@ -74,6 +74,7 @@
                     fillOpacity: 0.7
                 };
             }
+
 	    /////////////////////////Define a BikeStyle Function for GeoJSON
             function bikestyle(feature) {
                 return {
@@ -85,6 +86,7 @@
                     fillOpacity: 0.7
                 };
             }
+
 	    /////////////////////////Define a Bike Friendly Function for GeoJSON
             function bikefriendlystyle(feature) {
                 return {
@@ -96,6 +98,7 @@
                     fillOpacity: 0.7
                 };
             }
+
 	    /////////////////////////Define a Bike Sep Function for GeoJSON
             function bikesepstyle(feature) {
                 return {
@@ -115,7 +118,7 @@
                      layer.bindPopup(feature.properties.name); 
                }
              }).addTo(map);
-             $.getJSON('https://northrivergeo.github.io/bikeanooga/data/bike_road_final.geojson', function(data) {
+             $.getJSON('https://northrivergeo.github.io/bikeanooga/data/bicycle_road_final.geojson', function(data) {
                   friendly_geojsonLayer.addData(data);
              });
 
@@ -191,18 +194,6 @@
                   track_geojsonLayer.addData(data);
              });
 
-	    /////////////////////////////// Create a Lane Layer
-             var lane_geojsonLayer = L.geoJson(null, {
-                 style: trackstyle,
-                 onEachFeature: function(feature, layer) {
-                     layer.bindPopup(feature.properties.name);
-               }
-             }).addTo(map);
-             $.getJSON('https://northrivergeo.github.io/bikeanooga/data/sep_lane_final.geojson', function(data) {
-                  track_geojsonLayer.addData(data);
-             });
-
-
             ////////////////////////////// Layer control
             var baseMaps = {
                   "OpenStreetMap": L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -216,8 +207,8 @@
                 "South Chick Greenway": sc_geojsonLayer,
 		"Separated Lanes": track_geojsonLayer,  
                 "Bike Rentals": br_geojsonLayer, 
-		"Shared Lanes": shared_geojsonLayer
-		"Painted Separate Lanes" : sep_geojsonLayer
+		"Shared Lanes": shared_geojsonLayer,
+		"Painted Separate Lanes" : sep_geojsonLayer,
 		"Bike Friendly Streets" : friendly_geojsonLayer
                };
 
